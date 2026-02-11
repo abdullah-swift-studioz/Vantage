@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us | Vantage Education</title>
+    <meta name="description"
+        content="Discover why thousands of students trust Vantage Education for their university admissions journey. Expert guidance, proven results, and personalized support.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo" style="text-decoration: none;">
+                    <div class="brand-logo" style="line-height: 1;">
+                        <span
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white;">Vantage</span>
+                        <span
+                            style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white; margin-left: 0.3rem;">Education</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="services/country-selection.html" class="dropdown-item">
+                                <div class="dropdown-title">Strategic Academic Planning</div>
+                                <div class="dropdown-description">Expert guidance on choosing the right path</div>
+                            </a>
+                            <a href="services/apply-university.html" class="dropdown-item">
+                                <div class="dropdown-title">Expedited Application Management</div>
+                                <div class="dropdown-description">Streamlined application process</div>
+                            </a>
+                            <a href="services/student-visa.html" class="dropdown-item">
+                                <div class="dropdown-title">Expert Visa Guidance</div>
+                                <div class="dropdown-description"> comprehensive visa support services</div>
+                            </a>
+                            <a href="services/transition-support.html" class="dropdown-item">
+                                <div class="dropdown-title">Seamless Transition Support</div>
+                                <div class="dropdown-description">Pre-departure and arrival assistance</div>
+                            </a>
+                            <a href="get-started.html" class="dropdown-item">
+                                <div class="dropdown-title">Study Abroad Counselling</div>
+                                <div class="dropdown-description">Personalized counselling sessions</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="about.html" class="dropdown-item">
+                                <div class="dropdown-title">About the Company</div>
+                                <div class="dropdown-description">Our story and background</div>
+                            </a>
+                            <a href="ceo-message.html" class="dropdown-item">
+                                <div class="dropdown-title">Message from our CEO</div>
+                                <div class="dropdown-description">A personal message from our leadership</div>
+                            </a>
+                            <a href="mission-vision.html" class="dropdown-item">
+                                <div class="dropdown-title">Mission & Vision</div>
+                                <div class="dropdown-description">Our mission and vision for the future</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Countries <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="countries/canada.html" class="dropdown-item">
+                                <div class="dropdown-title">Canada</div>
+                            </a>
+                            <a href="countries/usa.html" class="dropdown-item">
+                                <div class="dropdown-title">United States (USA)</div>
+                            </a>
+                            <a href="countries/uk.html" class="dropdown-item">
+                                <div class="dropdown-title">United Kingdom (UK)</div>
+                            </a>
+                            <a href="countries/australia.html" class="dropdown-item">
+                                <div class="dropdown-title">Australia</div>
+                            </a>
+                            <a href="countries/ireland.html" class="dropdown-item">
+                                <div class="dropdown-title">Ireland</div>
+                            </a>
+                            <a href="countries/germany.html" class="dropdown-item">
+                                <div class="dropdown-title">Germany</div>
+                            </a>
+                            <a href="countries/new-zealand.html" class="dropdown-item">
+                                <div class="dropdown-title">New Zealand</div>
+                            </a>
+                            <a href="countries/france.html" class="dropdown-item">
+                                <div class="dropdown-title">France</div>
+                            </a>
+                            <a href="countries/malaysia.html" class="dropdown-item">
+                                <div class="dropdown-title">Malaysia</div>
+                            </a>
+                            <a href="countries/singapore.html" class="dropdown-item">
+                                <div class="dropdown-title">Singapore</div>
+                            </a>
+                            <a href="countries/switzerland.html" class="dropdown-item">
+                                <div class="dropdown-title">Switzerland</div>
+                            </a>
+                            <a href="countries/uae.html" class="dropdown-item">
+                                <div class="dropdown-title">UAE</div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="get-started.html" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-container" id="mobileMenuSafe" style="display: none;">
+        <!-- Header with Logo and Close Button -->
+        <div
+            style="width: 100%; max-width: 400px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <div class="brand-logo" style="line-height: 1;">
+                <span
+                    style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.5rem; color: #0a1f44;">Vantage</span>
+                <span
+                    style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.5rem; color: #0a1f44; margin-left: 0.2rem;">Education</span>
+            </div>
+            <button onclick="toggleMobileMenu()"
+                style="background: none; border: none; font-size: 2rem; cursor: pointer; color: #0a1f44; padding: 0.5rem; line-height: 1;">✕</button>
+        </div>
+
+        <div
+            style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; max-height: 90vh; padding-bottom: 2rem;">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+
+            <!-- Services Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-services-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Services <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-services-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="services/country-selection.html" class="mobile-sub-link" style="font-size: 1rem;">Strategic
+                        Planning</a>
+                    <a href="services/apply-university.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Application Mgmt</a>
+                    <a href="services/student-visa.html" class="mobile-sub-link" style="font-size: 1rem;">Visa
+                        Guidance</a>
+                    <a href="services/transition-support.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Transition Support</a>
+                    <a href="get-started.html" class="mobile-sub-link" style="font-size: 1rem;">Study Abroad
+                        Counselling</a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-about-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    About <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-about-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="about.html" class="mobile-sub-link" style="font-size: 1rem;">About Us</a>
+                    <a href="ceo-message.html" class="mobile-sub-link" style="font-size: 1rem;">CEO Message</a>
+                    <a href="mission-vision.html" class="mobile-sub-link" style="font-size: 1rem;">Mission & Vision</a>
+                </div>
+            </div>
+
+            <!-- Countries Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-countries-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Countries <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-countries-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <!-- Country links -->
+                    <a href="countries/canada.html" class="mobile-sub-link" style="font-size: 0.95rem;">Canada</a>
+                    <a href="countries/usa.html" class="mobile-sub-link" style="font-size: 0.95rem;">USA</a>
+                    <a href="countries/uk.html" class="mobile-sub-link" style="font-size: 0.95rem;">UK</a>
+                    <a href="countries/australia.html" class="mobile-sub-link" style="font-size: 0.95rem;">Australia</a>
+                    <a href="countries/ireland.html" class="mobile-sub-link" style="font-size: 0.95rem;">Ireland</a>
+                    <a href="countries/germany.html" class="mobile-sub-link" style="font-size: 0.95rem;">Germany</a>
+                    <a href="countries/new-zealand.html" class="mobile-sub-link" style="font-size: 0.95rem;">N.
+                        Zealand</a>
+                    <a href="countries/france.html" class="mobile-sub-link" style="font-size: 0.95rem;">France</a>
+                    <a href="countries/malaysia.html" class="mobile-sub-link" style="font-size: 0.95rem;">Malaysia</a>
+                    <a href="countries/singapore.html" class="mobile-sub-link" style="font-size: 0.95rem;">Singapore</a>
+                    <a href="countries/switzerland.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Switzerland</a>
+                    <a href="countries/uae.html" class="mobile-sub-link" style="font-size: 0.95rem;">UAE</a>
+                </div>
+            </div>
+
+
+            <a href="contact.html" class="mobile-menu-link" style="color: #0a1f44;">Contact</a>
+            <a href="get-started.html" class="btn btn-primary" style="text-align: center; margin-top: 1rem;">Get
+                Started</a>
+        </div>
+    </div>
+
+    <section class="hero"
+        style="min-height: 70vh; position: relative; overflow: hidden; display: flex; align-items: center; background: linear-gradient(135deg, #0a1f44 0%, #1e3a8a 50%, #0a1f44 100%);">
+        <!-- Animated Background Elements -->
+        <div style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+            <div
+                style="position: absolute; top: 10%; left: 10%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%; animation: float 20s ease-in-out infinite;">
+            </div>
+            <div
+                style="position: absolute; bottom: 15%; right: 15%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); border-radius: 50%; animation: float 25s ease-in-out infinite reverse;">
+            </div>
+            <div
+                style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.5;">
+            </div>
+        </div>
+
+        <div class="hero-container"
+            style="position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 5rem 2rem; width: 100%; text-align: center;">
+            <div class="hero-content" style="color: white; max-width: 900px; margin: 0 auto;">
+                <!-- Badge -->
+                <div
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 0.6rem 1.5rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); margin-bottom: 2rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span
+                        style="font-family: 'Poppins', sans-serif; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.5px;">Proven
+                        Excellence</span>
+                </div>
+
+                <h1 class="hero-title"
+                    style="font-family: 'Merriweather', serif; font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.15;">
+                    Why Choose<br>Vantage Education
+                </h1>
+                <p class="hero-description"
+                    style="font-size: 1.2rem; line-height: 1.7; opacity: 0.95; font-family: 'Poppins', sans-serif; margin-bottom: 2rem;">
+                    Join thousands of successful students who have achieved their dreams with our expert guidance. We
+                    combine proven strategies, personalized support, and insider knowledge to maximize your chances of
+                    acceptance.
+                </p>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="get-started.html" class="btn btn-primary"
+                        style="padding: 1rem 2rem; font-size: 1.1rem;">Get Started</a>
+                    <a href="contact.html" class="btn"
+                        style="padding: 1rem 2rem; font-size: 1.1rem; border: 2px solid white; color: white; background: transparent; border-radius: 8px; text-decoration: none; font-weight: 600;">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1);
+                }
+
+                33% {
+                    transform: translate(30px, -30px) scale(1.1);
+                }
+
+                66% {
+                    transform: translate(-20px, 20px) scale(0.9);
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section style="padding: 6rem 2rem; background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    Why Choose Vantage Education</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+                    We're not just another admissions consulting firm. We're your strategic partners in achieving your
+                    academic dreams, with a track record that speaks for itself.
+                </p>
+            </div>
+
+            <div
+                style="background: white; padding: 3rem; border-radius: 24px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin-bottom: 3rem;">
+                <p
+                    style="font-size: 1.1rem; line-height: 1.9; color: #444; font-family: 'Poppins', sans-serif; margin-bottom: 1.5rem;">
+                    At Vantage Education, we understand that applying to universities is one of the most important
+                    decisions of your life. That's why we've built a team of former admissions officers, expert
+                    strategists, and dedicated counselors who are committed to your success. Our personalized approach,
+                    combined with proven methodologies and insider knowledge, has helped thousands of students gain
+                    acceptance to their dream universities.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.9; color: #444; font-family: 'Poppins', sans-serif;">
+                    What sets us apart is our commitment to authenticity, strategic excellence, and genuine care for
+                    each student's unique journey. We don't just help you fill out forms—we help you discover and
+                    articulate your story in a way that resonates with admissions committees.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Advantages Section -->
+    <section style="padding: 6rem 2rem; background: white;">
+        <div class="container" style="max-width: 1400px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    What Sets Us Apart</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">The unique advantages that
+                    make Vantage Education your best choice for university admissions.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Proven Track Record</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">With over 1,330+ Ivy
+                        League acceptances and a 98% success rate, our results speak for themselves. We've helped
+                        students achieve 7x higher acceptance rates than the national average.</p>
+                </div>
+
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Former Admissions Officers</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">Our team includes
+                        former admissions officers from top universities who understand exactly what admissions
+                        committees are looking for. Get insider insights that give you a competitive edge.</p>
+                </div>
+
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M12 6V12L16 14" stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Personalized Approach</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">Every student is
+                        unique, and so is our approach. We take time to understand your story, goals, and strengths,
+                        crafting a personalized strategy that authentically represents who you are.</p>
+                </div>
+
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 11L12 14L22 4" stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Comprehensive Support</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">From country selection
+                        to application preparation and submission, we provide end-to-end support at every stage of your
+                        admissions journey. You're never alone in this process.</p>
+                </div>
+
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="var(--crimson)" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Strategic Excellence</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">Our proven
+                        methodologies and strategic frameworks have been refined through thousands of successful
+                        applications. We know what works and what doesn't.</p>
+                </div>
+
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Authentic Storytelling</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">We help you discover
+                        and articulate your authentic story. No templates, no generic advice—just genuine guidance that
+                        helps you stand out while staying true to yourself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Metrics Section -->
+    <section
+        style="padding: 6rem 2rem; background: linear-gradient(135deg, #0a1f44 0%, #1e3a8a 100%); position: relative; overflow: hidden;">
+        <div style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+            <div
+                style="position: absolute; top: 10%; left: 10%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%; animation: float 20s ease-in-out infinite;">
+            </div>
+            <div
+                style="position: absolute; bottom: 15%; right: 15%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); border-radius: 50%; animation: float 25s ease-in-out infinite reverse;">
+            </div>
+        </div>
+
+        <div class="container" style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: white; margin-bottom: 1rem;">
+                    Our Success by the Numbers</h2>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto;">Real
+                    results from real students who trusted us with their future.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+                <div style="text-align: center;">
+                    <div
+                        style="font-size: 3.5rem; font-weight: 900; color: white; margin-bottom: 1rem; font-family: 'Poppins', sans-serif; line-height: 1;">
+                        1,330+</div>
+                    <div style="font-size: 1.2rem; color: rgba(255,255,255,0.9); font-family: 'Merriweather', serif;">
+                        Ivy League Acceptances</div>
+                </div>
+
+                <div style="text-align: center;">
+                    <div
+                        style="font-size: 3.5rem; font-weight: 900; color: white; margin-bottom: 1rem; font-family: 'Poppins', sans-serif; line-height: 1;">
+                        98%</div>
+                    <div style="font-size: 1.2rem; color: rgba(255,255,255,0.9); font-family: 'Merriweather', serif;">
+                        Success Rate</div>
+                </div>
+
+                <div style="text-align: center;">
+                    <div
+                        style="font-size: 3.5rem; font-weight: 900; color: white; margin-bottom: 1rem; font-family: 'Poppins', sans-serif; line-height: 1;">
+                        7x</div>
+                    <div style="font-size: 1.2rem; color: rgba(255,255,255,0.9); font-family: 'Merriweather', serif;">
+                        Higher Acceptance Rate</div>
+                </div>
+
+                <div style="text-align: center;">
+                    <div
+                        style="font-size: 3.5rem; font-weight: 900; color: white; margin-bottom: 1rem; font-family: 'Poppins', sans-serif; line-height: 1;">
+                        10,000+</div>
+                    <div style="font-size: 1.2rem; color: rgba(255,255,255,0.9); font-family: 'Merriweather', serif;">
+                        Students Helped</div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1);
+                }
+
+                33% {
+                    transform: translate(30px, -30px) scale(1.1);
+                }
+
+                66% {
+                    transform: translate(-20px, 20px) scale(0.9);
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Benefits Section -->
+    <section style="padding: 6rem 2rem; background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    How This Benefits You</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">The tangible advantages of
+                    working with Vantage Education.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center;">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Higher Acceptance Rates</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Students working with us achieve significantly higher acceptance rates, with 7x better outcomes
+                        than the national average.
+                    </p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center;">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Save Time & Reduce Stress</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Let our experts handle the complexities while you focus on your studies. We streamline the
+                        entire process, saving you countless hours and reducing anxiety.
+                    </p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center;">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="var(--crimson)" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Access Insider Knowledge</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Benefit from insights that only former admissions officers can provide. Understand exactly what
+                        committees look for and how to position yourself effectively.
+                    </p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center;">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z"
+                                stroke="var(--crimson)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Personalized Partnership</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Work with dedicated counselors who become your strategic partners. We're invested in your
+                        success and available to support you throughout your journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 5rem 2rem; background: #0a1f44;">
+        <div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <h2 style="font-family: 'Merriweather', serif; font-size: 2.5rem; color: white; margin-bottom: 1.5rem;">
+                Ready to Start Your Success Story?</h2>
+            <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 2rem;">Join thousands of
+                successful students and let us help you achieve your academic dreams.</p>
+            <a href="get-started.html" class="btn btn-primary"
+                style="padding: 1rem 3rem; font-size: 1.1rem; background: white; color: var(--crimson);">Schedule Free
+                Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <!-- Brand -->
+                <div>
+                    <a href="index.html" style="text-decoration: none; display: inline-block; margin-bottom: 1.5rem;">
+                        <div class="brand-logo" style="line-height: 1;">
+                            <span
+                                style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white;">Vantage</span>
+                            <span
+                                style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white; margin-left: 0.3rem;">Education</span>
+                        </div>
+                    </a>
+                    <p style="opacity: 0.7; font-size: 0.9rem; line-height: 1.6;">Expert admissions consulting and
+                        student visa services for ambitious students.</p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Services</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="services/country-selection.html"
+                                style="color: white; text-decoration: none;">Strategic Planning</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/apply-university.html"
+                                style="color: white; text-decoration: none;">Application Mgmt</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/student-visa.html"
+                                style="color: white; text-decoration: none;">Visa Guidance</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/transition-support.html"
+                                style="color: white; text-decoration: none;">Transition Support</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="get-started.html"
+                                style="color: white; text-decoration: none;">Counselling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Company</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="about.html"
+                                style="color: white; text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="ceo-message.html"
+                                style="color: white; text-decoration: none;">CEO Message</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="mission-vision.html"
+                                style="color: white; text-decoration: none;">Mission & Vision</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="contact.html"
+                                style="color: white; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Destinations -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Destinations</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/usa.html"
+                                style="color: white; text-decoration: none;">USA</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/uk.html"
+                                style="color: white; text-decoration: none;">UK</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/canada.html"
+                                style="color: white; text-decoration: none;">Canada</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/australia.html"
+                                style="color: white; text-decoration: none;">Australia</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/germany.html"
+                                style="color: white; text-decoration: none;">Germany</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/country-selection.html"
+                                style="color: white; text-decoration: none;">View All Countries</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="opacity: 0.5; font-size: 0.85rem; margin: 0;">&copy; 2025 Vantage Education. All rights
+                    reserved.</p>
+                <div style="display: flex; gap: 2rem; opacity: 0.5; font-size: 0.85rem;">
+                    <a href="terms.html" style="color: white; text-decoration: none;">Terms & Conditions</a>
+                    <a href="privacy.html" style="color: white; text-decoration: none;">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

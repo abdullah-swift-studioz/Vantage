@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study in the USA | Vantage Education</title>
+    <meta name="description"
+        content="The Land of Opportunity. Unlock unlimited potential with a degree from a US university.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-logo" style="text-decoration: none;">
+                    <div class="brand-logo" style="line-height: 1;">
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white;">Vantage</span>
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white; margin-left: 0.3rem;">Education</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="country-selection.html" class="dropdown-item">
+                                <div class="dropdown-title">Country Selection Counselling</div>
+                                <div class="dropdown-description">Expert guidance on choosing the right country for your studies</div>
+                            </a>
+                            <a href="prepare-application.html" class="dropdown-item">
+                                <div class="dropdown-title">Preparing Your University Application</div>
+                                <div class="dropdown-description">Complete application preparation and documentation</div>
+                            </a>
+                            <a href="apply-university.html" class="dropdown-item">
+                                <div class="dropdown-title">Applying to Your Dream University</div>
+                                <div class="dropdown-description">End-to-end application submission support</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="../about.html" class="dropdown-item">
+                                <div class="dropdown-title">About the Company</div>
+                                <div class="dropdown-description">Our story and background</div>
+                            </a>
+                            <a href="../ceo-message.html" class="dropdown-item">
+                                <div class="dropdown-title">Message from our CEO</div>
+                                <div class="dropdown-description">A personal message from our leadership</div>
+                            </a>
+                            <a href="../mission-vision.html" class="dropdown-item">
+                                <div class="dropdown-title">Mission & Vision</div>
+                                <div class="dropdown-description">Our mission and vision for the future</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../why-choose-us.html" class="nav-link">Why Choose Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../terms.html" class="nav-link">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="../get-started.html" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-container" id="mobileMenu">
+        <a href="../index.html" class="mobile-menu-link">Home</a>
+        <a href="../about.html" class="mobile-menu-link">About</a>
+        <a href="country-selection.html" class="mobile-menu-link">Services</a>
+        <a href="../why-choose-us.html" class="mobile-menu-link">Why Choose Us</a>
+        <a href="../terms.html" class="mobile-menu-link">Terms & Conditions</a>
+        <a href="../contact.html" class="mobile-menu-link">Contact</a>
+        <a href="../get-started.html" class="btn btn-primary" style="margin-top: 1rem;">Get Started</a>
+        <button onclick="toggleMobileMenu()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 2rem;">✕</button>
+    </div>
+            <button onclick="toggleMobileMenu()"
+                style="background: none; border: none; font-size: 2rem; cursor: pointer; color: #0a1f44; padding: 0.5rem; line-height: 1;">✕</button>
+        </div>
+
+        <div
+            style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; max-height: 90vh; padding-bottom: 2rem;">
+            <a href="../index.html" class="mobile-menu-link">Home</a>
+
+            <!-- Services Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-services-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Services <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-services-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="../services/country-selection.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Strategic
+                        Planning</a>
+                    <a href="../services/apply-university.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Application Mgmt</a>
+                    <a href="../services/student-visa.html" class="mobile-sub-link" style="font-size: 1rem;">Visa
+                        Guidance</a>
+                    <a href="../services/transition-support.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Transition Support</a>
+                    <a href="../get-started.html" class="mobile-sub-link" style="font-size: 1rem;">Study Abroad
+                        Counselling</a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-about-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    About <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-about-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="../about.html" class="mobile-sub-link" style="font-size: 1rem;">About Us</a>
+                    <a href="../ceo-message.html" class="mobile-sub-link" style="font-size: 1rem;">CEO Message</a>
+                    <a href="../mission-vision.html" class="mobile-sub-link" style="font-size: 1rem;">Mission &
+                        Vision</a>
+                </div>
+            </div>
+
+            <!-- Countries Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-countries-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Countries <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-countries-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <!-- Country links -->
+                    <a href="../countries/canada.html" class="mobile-sub-link" style="font-size: 0.95rem;">Canada</a>
+                    <a href="../countries/usa.html" class="mobile-sub-link" style="font-size: 0.95rem;">USA</a>
+                    <a href="../countries/uk.html" class="mobile-sub-link" style="font-size: 0.95rem;">UK</a>
+                    <a href="../countries/australia.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Australia</a>
+                    <a href="../countries/ireland.html" class="mobile-sub-link" style="font-size: 0.95rem;">Ireland</a>
+                    <a href="../countries/germany.html" class="mobile-sub-link" style="font-size: 0.95rem;">Germany</a>
+                    <a href="../countries/new-zealand.html" class="mobile-sub-link" style="font-size: 0.95rem;">N.
+                        Zealand</a>
+                    <a href="../countries/france.html" class="mobile-sub-link" style="font-size: 0.95rem;">France</a>
+                    <a href="../countries/malaysia.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Malaysia</a>
+                    <a href="../countries/singapore.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Singapore</a>
+                    <a href="../countries/switzerland.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Switzerland</a>
+                    <a href="../countries/uae.html" class="mobile-sub-link" style="font-size: 0.95rem;">UAE</a>
+                </div>
+            </div>
+
+
+            <a href="../contact.html" class="mobile-menu-link" style="color: #0a1f44;">Contact</a>
+            <a href="../get-started.html" class="btn btn-primary" style="text-align: center; margin-top: 1rem;">Get
+                Started</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero"
+        style="min-height: 70vh; position: relative; overflow: hidden; display: flex; align-items: center; background: linear-gradient(135deg, #0a1f44 0%, #1e3a8a 50%, #0a1f44 100%);">
+        <!-- Animated Background Elements -->
+        <div style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+            <div
+                style="position: absolute; top: 10%; left: 10%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%; animation: float 20s ease-in-out infinite;">
+            </div>
+            <div
+                style="position: absolute; bottom: 15%; right: 15%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); border-radius: 50%; animation: float 25s ease-in-out infinite reverse;">
+            </div>
+            <div
+                style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.5;">
+            </div>
+        </div>
+
+        <div class="hero-container"
+            style="position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 5rem 2rem; width: 100%; text-align: center;">
+            <div class="hero-content" style="color: white; max-width: 950px; margin: 0 auto;">
+                <!-- Badge -->
+                <div
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 0.6rem 1.5rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); margin-bottom: 2rem;">
+                    <span style="font-size: 1.2rem;">🇺🇸</span>
+                    <span
+                        style="font-family: 'Poppins', sans-serif; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.5px;">Study
+                        in the USA</span>
+                </div>
+
+                <h1 class="hero-title"
+                    style="font-family: 'Merriweather', serif; font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.15;">
+                    The Land of Opportunity.<br>Unlock unlimited potential.
+                </h1>
+                <p class="hero-description"
+                    style="font-size: 1.2rem; line-height: 1.7; opacity: 0.95; font-family: 'Poppins', sans-serif; margin-bottom: 2rem;">
+                    Unlock unlimited potential with a degree from a US university.
+                </p>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="../get-started.html" class="btn btn-primary"
+                        style="padding: 1rem 2rem; font-size: 1.1rem;">Start Your Journey</a>
+                    <a href="../contact.html" class="btn"
+                        style="padding: 1rem 2rem; font-size: 1.1rem; border: 2px solid white; color: white; background: transparent; border-radius: 8px; text-decoration: none; font-weight: 600;">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+        <style>
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1);
+                }
+
+                33% {
+                    transform: translate(30px, -30px) scale(1.1);
+                }
+
+                66% {
+                    transform: translate(-20px, 20px) scale(0.9);
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Why Choose USA Section -->
+    <section style="padding: 6rem 2rem; background: white;">
+        <div class="container" style="max-width: 1400px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    Why Choose the USA?</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 900px; margin: 0 auto; line-height: 1.7;">
+                    The US education system is the gold standard for flexibility and innovation. With a US degree, your
+                    resume is instantly recognized by employers worldwide.
+                </p>
+            </div>
+
+            <div class="benefits-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+                <!-- Benefit 1 -->
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(10, 31, 68, 0.05); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        OPT & CPT</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">
+                        Gain hands-on work experience in your field of study for up to 3 years (for STEM graduates)
+                        through Optional Practical Training.
+                    </p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(10, 31, 68, 0.05); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#0a1f44"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Flexible Curriculum</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">
+                        The US "major/minor" system allows you to combine interests (e.g., Computer Science with
+                        Business) unlike anywhere else.
+                    </p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(10, 31, 68, 0.05); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="9" cy="7" r="4" stroke="#0a1f44" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="#0a1f44" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Campus Culture</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">
+                        Experience the vibrant, diverse campus life you see in movies—sports, clubs, and massive
+                        networking opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Network Section -->
+    <section
+        style="padding: 6rem 2rem; background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%); position: relative; overflow: hidden;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    Our University Network</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">
+                    From the bustle of New York to the beaches of California, we have you covered.
+                </p>
+            </div>
+
+            <div class="uni-card-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+
+                <!-- East Coast -->
+                <div class="uni-card">
+                    <h3>East Coast</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Pace University
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> New York Institute of Technology (NYIT)
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Adelphi University
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Long Island University (LIU)
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> University of Bridgeport
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mid-West & South -->
+                <div class="uni-card">
+                    <h3>Mid-West & South</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Webster University
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Florida International University
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Texas A&M University–Corpus Christi
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Wichita State University
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> University of Central Missouri
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Troy University
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Auburn University at Montgomery
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- West Coast -->
+                <div class="uni-card">
+                    <h3>West Coast</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> National University
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> California State University San Marcos
+                        </li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 0.5rem; color: #666;">
+                            <span style="color: var(--crimson);">•</span> Hult International Business School
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <style>
+                .uni-card {
+                    background: white;
+                    padding: 2.5rem;
+                    border-radius: 20px;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                    border-left: 4px solid var(--crimson);
+                }
+
+                .uni-card h3 {
+                    font-family: 'Merriweather', serif;
+                    font-size: 1.5rem;
+                    color: #1D150E;
+                    margin-bottom: 1rem;
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Vantage Verdict -->
+    <section style="padding: 6rem 2rem; background: #0a1f44; color: white;">
+        <div class="container" style="max-width: 1000px; margin: 0 auto; text-align: center;">
+            <div style="margin-bottom: 2rem;">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="opacity: 0.8;">
+                    <path
+                        d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 0 1 -1v-3a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-3a3 3 0 0 1 3 -3h2a3 3 0 0 1 3 3v3a3 3 0 0 1 -3 3h-2"
+                        fill="currentColor" />
+                    <path
+                        d="M20 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 0 1 -1v-3a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-3a3 3 0 0 1 3 -3h2a3 3 0 0 1 3 3v3a3 3 0 0 1 -3 3h-2"
+                        fill="currentColor" />
+                    <path d="M3 12h5a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-5a2 2 0 0 1 -2 -2v-5a2 2 0 0 1 2 -2z"
+                        fill="currentColor" />
+                    <path d="M13 12h5a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-5a2 2 0 0 1 -2 -2v-5a2 2 0 0 1 2 -2z"
+                        fill="currentColor" />
+                </svg>
+            </div>
+
+            <h2
+                style="font-family: 'Merriweather', serif; font-size: 2rem; font-weight: 300; font-style: italic; margin-bottom: 2rem; line-height: 1.6;">
+                "The USA is for the ambitious. If you want to be at the forefront of technology, business, or research,
+                the ROI of a US degree is unmatched."
+            </h2>
+
+            <div
+                style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 1.1rem; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.7);">
+                Vantage Verdict
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section style="padding: 5rem 2rem; background: white;">
+        <div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <h2 style="font-family: 'Merriweather', serif; font-size: 2.5rem; color: #1D150E; margin-bottom: 1.5rem;">
+                Start Your Journey to the USA</h2>
+            <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">
+                Ready to take the first step towards a world-class education?
+            </p>
+            <a href="../get-started.html" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.1rem;">Get
+                Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <!-- Brand -->
+                <div>
+                    <a href="../index.html"
+                        style="text-decoration: none; display: inline-block; margin-bottom: 1.5rem;">
+                        <div class="brand-logo" style="line-height: 1;">
+                            <span
+                                style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white;">Vantage</span>
+                            <span
+                                style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white; margin-left: 0.3rem;">Education</span>
+                        </div>
+                    </a>
+                    <p style="opacity: 0.7; font-size: 0.9rem; line-height: 1.6;">Expert admissions consulting and
+                        student visa services for ambitious students.</p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Services</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/country-selection.html"
+                                style="color: white; text-decoration: none;">Strategic Planning</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/apply-university.html"
+                                style="color: white; text-decoration: none;">Application Mgmt</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/student-visa.html"
+                                style="color: white; text-decoration: none;">Visa Guidance</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/transition-support.html"
+                                style="color: white; text-decoration: none;">Transition Support</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../get-started.html"
+                                style="color: white; text-decoration: none;">Counselling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Company</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="../about.html"
+                                style="color: white; text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../ceo-message.html"
+                                style="color: white; text-decoration: none;">CEO Message</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../mission-vision.html"
+                                style="color: white; text-decoration: none;">Mission & Vision</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../contact.html"
+                                style="color: white; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Destinations -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Destinations</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/usa.html"
+                                style="color: white; text-decoration: none;">USA</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/uk.html"
+                                style="color: white; text-decoration: none;">UK</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/canada.html"
+                                style="color: white; text-decoration: none;">Canada</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/australia.html"
+                                style="color: white; text-decoration: none;">Australia</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/germany.html"
+                                style="color: white; text-decoration: none;">Germany</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/country-selection.html"
+                                style="color: white; text-decoration: none;">View All Countries</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="opacity: 0.5; font-size: 0.85rem; margin: 0;">&copy; 2025 Vantage Education. All rights
+                    reserved.</p>
+                <div style="display: flex; gap: 2rem; opacity: 0.5; font-size: 0.85rem;">
+                    <a href="../terms.html" style="color: white; text-decoration: none;">Terms & Conditions</a>
+                    <a href="../privacy.html" style="color: white; text-decoration: none;">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Vantage Education</title>
+    <meta name="description" content="Privacy policy for Vantage Education services.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo" style="text-decoration: none;">
+                    <div class="brand-logo" style="line-height: 1;">
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white;">Vantage</span>
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white; margin-left: 0.3rem;">Education</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="services/country-selection.html" class="dropdown-item">
+                                <div class="dropdown-title">Country Selection Counselling</div>
+                                <div class="dropdown-description">Expert guidance on choosing the right country for your studies</div>
+                            </a>
+                            <a href="services/prepare-application.html" class="dropdown-item">
+                                <div class="dropdown-title">Preparing Your University Application</div>
+                                <div class="dropdown-description">Complete application preparation and documentation</div>
+                            </a>
+                            <a href="services/apply-university.html" class="dropdown-item">
+                                <div class="dropdown-title">Applying to Your Dream University</div>
+                                <div class="dropdown-description">End-to-end application submission support</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="about.html" class="dropdown-item">
+                                <div class="dropdown-title">About the Company</div>
+                                <div class="dropdown-description">Our story and background</div>
+                            </a>
+                            <a href="ceo-message.html" class="dropdown-item">
+                                <div class="dropdown-title">Message from our CEO</div>
+                                <div class="dropdown-description">A personal message from our leadership</div>
+                            </a>
+                            <a href="mission-vision.html" class="dropdown-item">
+                                <div class="dropdown-title">Mission & Vision</div>
+                                <div class="dropdown-description">Our mission and vision for the future</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="why-choose-us.html" class="nav-link">Why Choose Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="terms.html" class="nav-link">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="get-started.html" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-container" id="mobileMenu">
+        <a href="index.html" class="mobile-menu-link">Home</a>
+        <a href="about.html" class="mobile-menu-link">About</a>
+        <a href="services/country-selection.html" class="mobile-menu-link">Services</a>
+        <a href="why-choose-us.html" class="mobile-menu-link">Why Choose Us</a>
+        <a href="terms.html" class="mobile-menu-link">Terms & Conditions</a>
+        <a href="contact.html" class="mobile-menu-link">Contact</a>
+        <a href="get-started.html" class="btn btn-primary" style="margin-top: 1rem;">Get Started</a>
+        <button onclick="toggleMobileMenu()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 2rem;">✕</button>
+    </div>
+            <button onclick="toggleMobileMenu()"
+                style="background: none; border: none; font-size: 2rem; cursor: pointer; color: #0a1f44; padding: 0.5rem; line-height: 1;">✕</button>
+        </div>
+
+        <div
+            style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; max-height: 90vh; padding-bottom: 2rem;">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+
+            <!-- Services Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-services-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Services <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-services-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="services/country-selection.html" class="mobile-sub-link" style="font-size: 1rem;">Strategic
+                        Planning</a>
+                    <a href="services/apply-university.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Application Mgmt</a>
+                    <a href="services/student-visa.html" class="mobile-sub-link" style="font-size: 1rem;">Visa
+                        Guidance</a>
+                    <a href="services/transition-support.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Transition Support</a>
+                    <a href="get-started.html" class="mobile-sub-link" style="font-size: 1rem;">Study Abroad
+                        Counselling</a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-about-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    About <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-about-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="about.html" class="mobile-sub-link" style="font-size: 1rem;">About Us</a>
+                    <a href="ceo-message.html" class="mobile-sub-link" style="font-size: 1rem;">CEO Message</a>
+                    <a href="mission-vision.html" class="mobile-sub-link" style="font-size: 1rem;">Mission & Vision</a>
+                </div>
+            </div>
+
+            <!-- Countries Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-countries-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Countries <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-countries-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <!-- Country links -->
+                    <a href="countries/canada.html" class="mobile-sub-link" style="font-size: 0.95rem;">Canada</a>
+                    <a href="countries/usa.html" class="mobile-sub-link" style="font-size: 0.95rem;">USA</a>
+                    <a href="countries/uk.html" class="mobile-sub-link" style="font-size: 0.95rem;">UK</a>
+                    <a href="countries/australia.html" class="mobile-sub-link" style="font-size: 0.95rem;">Australia</a>
+                    <a href="countries/ireland.html" class="mobile-sub-link" style="font-size: 0.95rem;">Ireland</a>
+                    <a href="countries/germany.html" class="mobile-sub-link" style="font-size: 0.95rem;">Germany</a>
+                    <a href="countries/new-zealand.html" class="mobile-sub-link" style="font-size: 0.95rem;">N.
+                        Zealand</a>
+                    <a href="countries/france.html" class="mobile-sub-link" style="font-size: 0.95rem;">France</a>
+                    <a href="countries/malaysia.html" class="mobile-sub-link" style="font-size: 0.95rem;">Malaysia</a>
+                    <a href="countries/singapore.html" class="mobile-sub-link" style="font-size: 0.95rem;">Singapore</a>
+                    <a href="countries/switzerland.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Switzerland</a>
+                    <a href="countries/uae.html" class="mobile-sub-link" style="font-size: 0.95rem;">UAE</a>
+                </div>
+            </div>
+
+
+            <a href="contact.html" class="mobile-menu-link" style="color: #0a1f44;">Contact</a>
+            <a href="get-started.html" class="btn btn-primary" style="text-align: center; margin-top: 1rem;">Get
+                Started</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero"
+        style="min-height: 40vh; position: relative; overflow: hidden; display: flex; align-items: center; background: linear-gradient(135deg, #0a1f44 0%, #1e3a8a 50%, #0a1f44 100%);">
+        <div style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+            <div
+                style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.5;">
+            </div>
+        </div>
+
+        <div class="container"
+            style="position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 4rem 2rem; width: 100%; text-align: center;">
+            <h1
+                style="font-family: 'Merriweather', serif; font-size: 3rem; font-weight: 700; color: white; margin-bottom: 1rem;">
+                Privacy Policy</h1>
+            <p style="font-size: 1.1rem; color: rgba(255,255,255,0.9); font-family: 'Poppins', sans-serif;">Last
+                updated: December 2024</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section style="padding: 5rem 2rem; background: white;">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <div style="font-family: 'Poppins', sans-serif; color: #444; line-height: 1.8;">
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    1. Information We Collect</h2>
+                <p style="margin-bottom: 1rem;">We collect information you provide directly to us, including:</p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 2rem;">
+                    <li>Name and contact information</li>
+                    <li>Academic records and transcripts</li>
+                    <li>Application materials and essays</li>
+                    <li>Payment information</li>
+                    <li>Communication preferences</li>
+                </ul>
+
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    2. How We Use Your Information</h2>
+                <p style="margin-bottom: 1rem;">We use the information we collect to:</p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 2rem;">
+                    <li>Provide our consulting services</li>
+                    <li>Process your applications</li>
+                    <li>Communicate with you about our services</li>
+                    <li>Improve our services</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    3. Information Sharing</h2>
+                <p style="margin-bottom: 1.5rem;">We do not sell your personal information. We may share your
+                    information with:</p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 2rem;">
+                    <li>Service providers who assist in our operations</li>
+                    <li>Educational institutions (with your consent)</li>
+                    <li>Legal authorities when required by law</li>
+                </ul>
+
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    4. Data Security</h2>
+                <p style="margin-bottom: 1.5rem;">We implement appropriate security measures to protect your personal
+                    information against unauthorized access, alteration, disclosure, or destruction. However, no method
+                    of transmission over the internet is 100% secure.</p>
+
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    5. Data Retention</h2>
+                <p style="margin-bottom: 1.5rem;">We retain your personal information for as long as necessary to
+                    provide our services and fulfill the purposes outlined in this policy, unless a longer retention
+                    period is required by law.</p>
+
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    6. Your Rights</h2>
+                <p style="margin-bottom: 1rem;">You have the right to:</p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 2rem;">
+                    <li>Access your personal information</li>
+                    <li>Correct inaccurate information</li>
+                    <li>Request deletion of your information</li>
+                    <li>Opt-out of marketing communications</li>
+                </ul>
+
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    7. Cookies and Tracking</h2>
+                <p style="margin-bottom: 1.5rem;">We use cookies and similar technologies to enhance your experience on
+                    our website. You can control cookie preferences through your browser settings.</p>
+
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    8. Children's Privacy</h2>
+                <p style="margin-bottom: 1.5rem;">Our services are intended for users 13 years and older. We do not
+                    knowingly collect information from children under 13 without parental consent.</p>
+
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    9. Changes to This Policy</h2>
+                <p style="margin-bottom: 1.5rem;">We may update this privacy policy from time to time. We will notify
+                    you of any changes by posting the new policy on this page.</p>
+
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 1.8rem; color: #1D150E; margin-bottom: 1.5rem; margin-top: 2rem;">
+                    10. Contact Us</h2>
+                <p style="margin-bottom: 1.5rem;">If you have questions about this Privacy Policy, please contact us at:
+                </p>
+                <p style="margin-bottom: 1.5rem;"><strong>Email:</strong> privacy@vantageeducation.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <!-- Brand -->
+                <div>
+                    <a href="index.html" style="text-decoration: none; display: inline-block; margin-bottom: 1.5rem;">
+                        <div class="brand-logo" style="line-height: 1;">
+                            <span
+                                style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white;">Vantage</span>
+                            <span
+                                style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white; margin-left: 0.3rem;">Education</span>
+                        </div>
+                    </a>
+                    <p style="opacity: 0.7; font-size: 0.9rem; line-height: 1.6;">Expert admissions consulting and
+                        student visa services for ambitious students.</p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Services</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="services/country-selection.html"
+                                style="color: white; text-decoration: none;">Strategic Planning</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/apply-university.html"
+                                style="color: white; text-decoration: none;">Application Mgmt</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/student-visa.html"
+                                style="color: white; text-decoration: none;">Visa Guidance</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/transition-support.html"
+                                style="color: white; text-decoration: none;">Transition Support</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="get-started.html"
+                                style="color: white; text-decoration: none;">Counselling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Company</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="about.html"
+                                style="color: white; text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="ceo-message.html"
+                                style="color: white; text-decoration: none;">CEO Message</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="mission-vision.html"
+                                style="color: white; text-decoration: none;">Mission & Vision</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="contact.html"
+                                style="color: white; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Destinations -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Destinations</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/usa.html"
+                                style="color: white; text-decoration: none;">USA</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/uk.html"
+                                style="color: white; text-decoration: none;">UK</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/canada.html"
+                                style="color: white; text-decoration: none;">Canada</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/australia.html"
+                                style="color: white; text-decoration: none;">Australia</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="countries/germany.html"
+                                style="color: white; text-decoration: none;">Germany</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/country-selection.html"
+                                style="color: white; text-decoration: none;">View All Countries</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="opacity: 0.5; font-size: 0.85rem; margin: 0;">&copy; 2025 Vantage Education. All rights
+                    reserved.</p>
+                <div style="display: flex; gap: 2rem; opacity: 0.5; font-size: 0.85rem;">
+                    <a href="terms.html" style="color: white; text-decoration: none;">Terms & Conditions</a>
+                    <a href="privacy.html" style="color: white; text-decoration: none;">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

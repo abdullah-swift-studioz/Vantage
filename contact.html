@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Vantage Education</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Responsive Utilities */
+        @media (max-width: 900px) {
+            .contact-grid-container {
+                grid-template-columns: 1fr !important;
+                gap: 3rem !important;
+            }
+
+            .contact-form-row {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+            }
+
+            .hero-title {
+                font-size: 2.5rem !important;
+            }
+
+            .section-title {
+                font-size: 2rem !important;
+            }
+
+            .contact-section {
+                padding: 4rem 1.5rem !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-title {
+                font-size: 2rem !important;
+            }
+
+            .section-header p {
+                font-size: 1rem !important;
+            }
+
+            .contact-info-box {
+                padding: 2rem !important;
+            }
+        }
+
+        /* Default Layouts (overridable by media queries) */
+        .contact-grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo" style="text-decoration: none;">
+                    <div class="brand-logo" style="line-height: 1;">
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white;">Vantage</span>
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white; margin-left: 0.3rem;">Education</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="services/undergraduate.html" class="dropdown-item">
+                                <div class="dropdown-title">Undergraduate Admissions</div>
+                                <div class="dropdown-description">Ivy League & top university application support</div>
+                            </a>
+                            <a href="services/grad-school.html" class="dropdown-item">
+                                <div class="dropdown-title">Graduate School Admissions</div>
+                                <div class="dropdown-description">Masters & PhD program applications</div>
+                            </a>
+                            <a href="services/student-visa.html" class="dropdown-item">
+                                <div class="dropdown-title">Student Visa Services</div>
+                                <div class="dropdown-description">F-1 visa application & documentation</div>
+                            </a>
+                            <a href="services/fao-review.html" class="dropdown-item">
+                                <div class="dropdown-title">FAO Application Review</div>
+                                <div class="dropdown-description">Expert review by former admissions officers</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="about.html" class="dropdown-item">
+                                <div class="dropdown-title">About Us</div>
+                                <div class="dropdown-description">Our story and mission</div>
+                            </a>
+                            <a href="results.html" class="dropdown-item">
+                                <div class="dropdown-title">Our Results</div>
+                                <div class="dropdown-description">Student success stories & outcomes</div>
+                            </a>
+                            <a href="press.html" class="dropdown-item">
+                                <div class="dropdown-title">Press & Media</div>
+                                <div class="dropdown-description">Vantage in the news</div>
+                            </a>
+                            <a href="careers.html" class="dropdown-item">
+                                <div class="dropdown-title">Careers</div>
+                                <div class="dropdown-description">Join our team</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="get-started.html" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-container" id="mobileMenu">
+        <a href="index.html" class="mobile-menu-link">Home</a>
+        <a href="about.html" class="mobile-menu-link">About</a>
+        <a href="services/undergraduate.html" class="mobile-menu-link">Services</a>
+        <a href="contact.html" class="mobile-menu-link">Contact</a>
+        <a href="get-started.html" class="btn btn-primary" style="margin-top: 1rem;">Get Started</a>
+        <button onclick="toggleMobileMenu()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 2rem;">✕</button>
+    </div>
+            <button onclick="toggleMobileMenu()"
+                style="background: none; border: none; font-size: 2rem; cursor: pointer; color: #0a1f44; padding: 0.5rem; line-height: 1;">✕</button>
+        </div>
+
+        <div
+            style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; max-height: 90vh; padding-bottom: 2rem;">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+
+            <!-- Services Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-services-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Services <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-services-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="services/country-selection.html" class="mobile-sub-link" style="font-size: 1rem;">Strategic
+                        Planning</a>
+                    <a href="services/apply-university.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Application Mgmt</a>
+                    <a href="services/student-visa.html" class="mobile-sub-link" style="font-size: 1rem;">Visa
+                        Guidance</a>
+                    <a href="services/transition-support.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Transition Support</a>
+                    <a href="get-started.html" class="mobile-sub-link" style="font-size: 1rem;">Study Abroad
+                        Counselling</a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-about-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    About <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-about-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="about.html" class="mobile-sub-link" style="font-size: 1rem;">About Us</a>
+                    <a href="ceo-message.html" class="mobile-sub-link" style="font-size: 1rem;">CEO Message</a>
+                    <a href="mission-vision.html" class="mobile-sub-link" style="font-size: 1rem;">Mission & Vision</a>
+                </div>
+            </div>
+
+            <!-- Countries Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-countries-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Countries <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-countries-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <!-- Country links -->
+                    <a href="countries/canada.html" class="mobile-sub-link" style="font-size: 0.95rem;">Canada</a>
+                    <a href="countries/usa.html" class="mobile-sub-link" style="font-size: 0.95rem;">USA</a>
+                    <a href="countries/uk.html" class="mobile-sub-link" style="font-size: 0.95rem;">UK</a>
+                    <a href="countries/australia.html" class="mobile-sub-link" style="font-size: 0.95rem;">Australia</a>
+                    <a href="countries/ireland.html" class="mobile-sub-link" style="font-size: 0.95rem;">Ireland</a>
+                    <a href="countries/germany.html" class="mobile-sub-link" style="font-size: 0.95rem;">Germany</a>
+                    <a href="countries/new-zealand.html" class="mobile-sub-link" style="font-size: 0.95rem;">N.
+                        Zealand</a>
+                    <a href="countries/france.html" class="mobile-sub-link" style="font-size: 0.95rem;">France</a>
+                    <a href="countries/malaysia.html" class="mobile-sub-link" style="font-size: 0.95rem;">Malaysia</a>
+                    <a href="countries/singapore.html" class="mobile-sub-link" style="font-size: 0.95rem;">Singapore</a>
+                    <a href="countries/switzerland.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Switzerland</a>
+                    <a href="countries/uae.html" class="mobile-sub-link" style="font-size: 0.95rem;">UAE</a>
+                </div>
+            </div>
+
+
+            <a href="contact.html" class="mobile-menu-link" style="color: #0a1f44;">Contact</a>
+            <a href="get-started.html" class="btn btn-primary" style="text-align: center; margin-top: 1rem;">Get
+                Started</a>
+        </div>
+    </div>
+
+    <section class="hero"
+        style="min-height: 60vh; position: relative; overflow: hidden; display: flex; align-items: center; background: linear-gradient(135deg, #0a1f44 0%, #1e3a8a 50%, #0a1f44 100%);">
+        <!-- Animated Background Elements -->
+        <div style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+            <!-- Floating orbs -->
+            <div
+                style="position: absolute; top: 10%; left: 10%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%; animation: float 20s ease-in-out infinite;">
+            </div>
+            <div
+                style="position: absolute; bottom: 15%; right: 15%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); border-radius: 50%; animation: float 25s ease-in-out infinite reverse;">
+            </div>
+            <!-- Grid pattern overlay -->
+            <div
+                style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.5;">
+            </div>
+        </div>
+        <div class="hero-container"
+            style="position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 4rem 2rem; width: 100%; text-align: center;">
+            <div class="hero-content" style="color: white; max-width: 800px; margin: 0 auto;">
+                <h1 class="hero-title"
+                    style="font-family: 'Merriweather', serif; font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">
+                    Contact Us</h1>
+                <p class="hero-description"
+                    style="font-size: 1.25rem; line-height: 1.6; opacity: 0.95; font-family: 'Poppins', sans-serif; margin-bottom: 2rem;">
+                    Get in touch with our team for questions or support.</p>
+            </div>
+        </div>
+        <style>
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1);
+                }
+
+                33% {
+                    transform: translate(30px, -30px) scale(1.1);
+                }
+
+                66% {
+                    transform: translate(-20px, 20px) scale(0.9);
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Get in Touch Section (Light Theme) -->
+    <section class="contact-section" style="padding: 6rem 2rem; background: #ffffff; position: relative;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
+            <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="section-title"
+                    style="color: #0a1f44; font-size: 2.5rem; margin-bottom: 1rem; font-family: 'Merriweather', serif; font-weight: 700;">
+                    Get in Touch</h2>
+                <p style="color: #666; font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+                    Have questions about the admissions process? We're here to help. Reach out to our team directly or
+                    fill out the form below.
+                </p>
+            </div>
+
+            <div class="contact-grid-container">
+
+                <!-- Contact Information - Left Side (Styled Box) -->
+                <div class="contact-info-box"
+                    style="background: #f8f9fa; padding: 3rem; border-radius: 24px; border: 1px solid rgba(0,0,0,0.05);">
+                    <h3
+                        style="color: #0a1f44; font-size: 1.5rem; margin-bottom: 2.5rem; font-family: 'Merriweather', serif;">
+                        Contact Information</h3>
+
+                    <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+                        <!-- Phone Number -->
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div
+                                style="flex-shrink: 0; width: 44px; height: 44px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
+                                        stroke="#0a1f44" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 style="color: #0a1f44; font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem;">
+                                    Phone</h4>
+                                <a href="tel:+15551234567"
+                                    style="color: #4a5568; text-decoration: none; font-size: 1rem; transition: color 0.3s;"
+                                    onmouseover="this.style.color='#d32f2f'" onmouseout="this.style.color='#4a5568'">+1
+                                    (555) 123-4567</a>
+                            </div>
+                        </div>
+
+                        <!-- Office Location -->
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div
+                                style="flex-shrink: 0; width: 44px; height: 44px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                                        stroke="#0a1f44" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <circle cx="12" cy="10" r="3" stroke="#0a1f44" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 style="color: #0a1f44; font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem;">
+                                    Office</h4>
+                                <p style="color: #4a5568; font-size: 1rem; line-height: 1.6; margin: 0;">
+                                    123 Education Avenue, Suite 500<br>
+                                    New York, NY 10001
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div
+                                style="flex-shrink: 0; width: 44px; height: 44px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                        stroke="#0a1f44" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <polyline points="22,6 12,13 2,6" stroke="#0a1f44" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 style="color: #0a1f44; font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem;">
+                                    Email</h4>
+                                <a href="mailto:info@vantageedu.com"
+                                    style="color: #4a5568; text-decoration: none; font-size: 1rem; transition: color 0.3s;"
+                                    onmouseover="this.style.color='#d32f2f'"
+                                    onmouseout="this.style.color='#4a5568'">info@vantageedu.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form - Right Side -->
+                <form id="contactForm" style="padding: 0;">
+                    <div class="contact-form-row">
+                        <div>
+                            <label for="firstName"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #0a1f44; font-size: 0.95rem;">First
+                                Name *</label>
+                            <input type="text" id="firstName" name="firstName" required
+                                style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; color: #1a202c; transition: all 0.3s;"
+                                placeholder="John" onfocus="this.style.borderColor='#0a1f44'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e2e8f0'">
+                        </div>
+                        <div>
+                            <label for="lastName"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #0a1f44; font-size: 0.95rem;">Last
+                                Name *</label>
+                            <input type="text" id="lastName" name="lastName" required
+                                style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; color: #1a202c; transition: all 0.3s;"
+                                placeholder="Doe" onfocus="this.style.borderColor='#0a1f44'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e2e8f0'">
+                        </div>
+                    </div>
+
+                    <div class="contact-form-row">
+                        <div>
+                            <label for="email"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #0a1f44; font-size: 0.95rem;">Email
+                                Address *</label>
+                            <input type="email" id="email" name="email" required
+                                style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; color: #1a202c; transition: all 0.3s;"
+                                placeholder="john@example.com"
+                                onfocus="this.style.borderColor='#0a1f44'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e2e8f0'">
+                        </div>
+                        <div>
+                            <label for="phone"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #0a1f44; font-size: 0.95rem;">Phone
+                                Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; color: #1a202c; transition: all 0.3s;"
+                                placeholder="+1 (555) 000-0000"
+                                onfocus="this.style.borderColor='#0a1f44'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e2e8f0'">
+                        </div>
+                    </div>
+
+                    <div class="contact-form-row">
+                        <div>
+                            <label for="studentGrade"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #0a1f44; font-size: 0.95rem;">Student's
+                                Grade</label>
+                            <select id="studentGrade" name="studentGrade"
+                                style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; color: #1a202c; transition: all 0.3s; cursor: pointer;"
+                                onfocus="this.style.borderColor='#0a1f44'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e2e8f0'">
+                                <option value="" style="color: #a0aec0;">Select Grade</option>
+                                <option value="9th">9th Grade</option>
+                                <option value="10th">10th Grade</option>
+                                <option value="11th">11th Grade</option>
+                                <option value="12th">12th Grade</option>
+                                <option value="college">College Student</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="interestArea"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #0a1f44; font-size: 0.95rem;">Interest</label>
+                            <select id="interestArea" name="interestArea"
+                                style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; color: #1a202c; transition: all 0.3s; cursor: pointer;"
+                                onfocus="this.style.borderColor='#0a1f44'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e2e8f0'">
+                                <option value="" style="color: #a0aec0;">Select Service</option>
+                                <option value="counseling">Admissions Counseling</option>
+                                <option value="visa">Visa Support</option>
+                                <option value="planning">Strategic Planning</option>
+                                <option value="other">General Inquiry</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="message"
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #0a1f44; font-size: 0.95rem;">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; color: #1a202c; resize: vertical; transition: all 0.3s;"
+                            placeholder="How can we help you?"
+                            onfocus="this.style.borderColor='#0a1f44'; this.style.outline='none'"
+                            onblur="this.style.borderColor='#e2e8f0'"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; padding: 1.25rem 2rem; font-size: 1.1rem; font-weight: 600; background: var(--crimson, #d32f2f); color: white; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 14px rgba(211, 47, 47, 0.3);"
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(211, 47, 47, 0.4)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 14px rgba(211, 47, 47, 0.3)'">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (New Content) -->
+    <section style="padding: 6rem 2rem; background: #f8f9fa;">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Merriweather', serif; font-size: 2.5rem; font-weight: 700; color: #0a1f44; margin-bottom: 1rem;">
+                    Often Asked</h2>
+                <p style="color: #666; font-size: 1.1rem;">Common questions about our admissions services.</p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <!-- FAQ Item 1 -->
+                <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
+                    <h3 style="color: #0a1f44; font-size: 1.2rem; margin-bottom: 0.8rem; font-weight: 600;">How far in
+                        advance should I start the application process?</h3>
+                    <p style="color: #555; line-height: 1.6;">We recommend starting at least 12-18 months before your
+                        intended start date. This gives ample time for standardized testing, essay drafting, and
+                        strategic profile building.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
+                    <h3 style="color: #0a1f44; font-size: 1.2rem; margin-bottom: 0.8rem; font-weight: 600;">Do you
+                        guarantee admission to Ivy League schools?</h3>
+                    <p style="color: #555; line-height: 1.6;">No ethical counselor can guarantee admission to specific
+                        universities. However, our track record shows that 94% of our students are accepted into one of
+                        their top 3 choice institutions.</p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
+                    <h3 style="color: #0a1f44; font-size: 1.2rem; margin-bottom: 0.8rem; font-weight: 600;">Do you help
+                        with student visas?</h3>
+                    <p style="color: #555; line-height: 1.6;">Yes! We provide comprehensive visa support, including
+                        document checks, interview preparation, and post-approval transition planning for all major
+                        study destinations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <div>
+                    <a href="index.html" style="text-decoration: none; display: inline-block; margin-bottom: 1.5rem;">
+                        <div class="brand-logo" style="line-height: 1;">
+                            <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white;">Vantage</span>
+                            <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white; margin-left: 0.3rem;">Education</span>
+                        </div>
+                    </a>
+                    <p style="opacity: 0.7; font-size: 0.9rem; line-height: 1.6;">Expert admissions consulting and student visa services for ambitious students.</p>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Services</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="services/undergraduate.html" style="color: white; text-decoration: none;">Undergraduate Admissions</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/grad-school.html" style="color: white; text-decoration: none;">Graduate Admissions</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/student-visa.html" style="color: white; text-decoration: none;">Student Visa Services</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/fao-review.html" style="color: white; text-decoration: none;">FAO Review</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Company</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="results.html" style="color: white; text-decoration: none;">Our Results</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="press.html" style="color: white; text-decoration: none;">Press</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="careers.html" style="color: white; text-decoration: none;">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Contact</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="get-started.html" style="color: white; text-decoration: none;">Get Started</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="contact.html" style="color: white; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="opacity: 0.5; font-size: 0.85rem; margin: 0;">&copy; 2025 Vantage Education. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem; opacity: 0.5; font-size: 0.85rem;">
+                    <a href="terms.html" style="color: white; text-decoration: none;">Terms & Conditions</a>
+                    <a href="privacy.html" style="color: white; text-decoration: none;">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

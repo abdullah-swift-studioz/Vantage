@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless Transition Support | Vantage Education</title>
+    <meta name="description"
+        content="Arrive like a local. We manage your housing, airport transfer, essential setup, and cultural orientation so you can focus on your studies.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-logo" style="text-decoration: none;">
+                    <div class="brand-logo" style="line-height: 1;">
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white;">Vantage</span>
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white; margin-left: 0.3rem;">Education</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="country-selection.html" class="dropdown-item">
+                                <div class="dropdown-title">Country Selection Counselling</div>
+                                <div class="dropdown-description">Expert guidance on choosing the right country for your studies</div>
+                            </a>
+                            <a href="prepare-application.html" class="dropdown-item">
+                                <div class="dropdown-title">Preparing Your University Application</div>
+                                <div class="dropdown-description">Complete application preparation and documentation</div>
+                            </a>
+                            <a href="apply-university.html" class="dropdown-item">
+                                <div class="dropdown-title">Applying to Your Dream University</div>
+                                <div class="dropdown-description">End-to-end application submission support</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="../about.html" class="dropdown-item">
+                                <div class="dropdown-title">About the Company</div>
+                                <div class="dropdown-description">Our story and background</div>
+                            </a>
+                            <a href="../ceo-message.html" class="dropdown-item">
+                                <div class="dropdown-title">Message from our CEO</div>
+                                <div class="dropdown-description">A personal message from our leadership</div>
+                            </a>
+                            <a href="../mission-vision.html" class="dropdown-item">
+                                <div class="dropdown-title">Mission & Vision</div>
+                                <div class="dropdown-description">Our mission and vision for the future</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../why-choose-us.html" class="nav-link">Why Choose Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../terms.html" class="nav-link">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="../get-started.html" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-container" id="mobileMenu">
+        <a href="../index.html" class="mobile-menu-link">Home</a>
+        <a href="../about.html" class="mobile-menu-link">About</a>
+        <a href="country-selection.html" class="mobile-menu-link">Services</a>
+        <a href="../why-choose-us.html" class="mobile-menu-link">Why Choose Us</a>
+        <a href="../terms.html" class="mobile-menu-link">Terms & Conditions</a>
+        <a href="../contact.html" class="mobile-menu-link">Contact</a>
+        <a href="../get-started.html" class="btn btn-primary" style="margin-top: 1rem;">Get Started</a>
+        <button onclick="toggleMobileMenu()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 2rem;">✕</button>
+    </div>
+            <button onclick="toggleMobileMenu()"
+                style="background: none; border: none; font-size: 2rem; cursor: pointer; color: #0a1f44; padding: 0.5rem; line-height: 1;">✕</button>
+        </div>
+
+        <div
+            style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; max-height: 90vh; padding-bottom: 2rem;">
+            <a href="../index.html" class="mobile-menu-link">Home</a>
+
+            <!-- Services Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-services-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Services <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-services-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="../services/country-selection.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Strategic
+                        Planning</a>
+                    <a href="../services/apply-university.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Application Mgmt</a>
+                    <a href="../services/student-visa.html" class="mobile-sub-link" style="font-size: 1rem;">Visa
+                        Guidance</a>
+                    <a href="../services/transition-support.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Transition Support</a>
+                    <a href="../get-started.html" class="mobile-sub-link" style="font-size: 1rem;">Study Abroad
+                        Counselling</a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-about-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    About <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-about-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="../about.html" class="mobile-sub-link" style="font-size: 1rem;">About Us</a>
+                    <a href="../ceo-message.html" class="mobile-sub-link" style="font-size: 1rem;">CEO Message</a>
+                    <a href="../mission-vision.html" class="mobile-sub-link" style="font-size: 1rem;">Mission &
+                        Vision</a>
+                </div>
+            </div>
+
+            <!-- Countries Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-countries-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Countries <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-countries-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <!-- Country links -->
+                    <a href="../countries/canada.html" class="mobile-sub-link" style="font-size: 0.95rem;">Canada</a>
+                    <a href="../countries/usa.html" class="mobile-sub-link" style="font-size: 0.95rem;">USA</a>
+                    <a href="../countries/uk.html" class="mobile-sub-link" style="font-size: 0.95rem;">UK</a>
+                    <a href="../countries/australia.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Australia</a>
+                    <a href="../countries/ireland.html" class="mobile-sub-link" style="font-size: 0.95rem;">Ireland</a>
+                    <a href="../countries/germany.html" class="mobile-sub-link" style="font-size: 0.95rem;">Germany</a>
+                    <a href="../countries/new-zealand.html" class="mobile-sub-link" style="font-size: 0.95rem;">N.
+                        Zealand</a>
+                    <a href="../countries/france.html" class="mobile-sub-link" style="font-size: 0.95rem;">France</a>
+                    <a href="../countries/malaysia.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Malaysia</a>
+                    <a href="../countries/singapore.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Singapore</a>
+                    <a href="../countries/switzerland.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Switzerland</a>
+                    <a href="../countries/uae.html" class="mobile-sub-link" style="font-size: 0.95rem;">UAE</a>
+                </div>
+            </div>
+
+
+            <a href="../contact.html" class="mobile-menu-link" style="color: #0a1f44;">Contact</a>
+            <a href="../get-started.html" class="btn btn-primary" style="text-align: center; margin-top: 1rem;">Get
+                Started</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero"
+        style="min-height: 70vh; position: relative; overflow: hidden; display: flex; align-items: center; background: linear-gradient(135deg, #0a1f44 0%, #1e3a8a 50%, #0a1f44 100%);">
+        <!-- Animated Background Elements -->
+        <div style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+            <div
+                style="position: absolute; top: 10%; left: 10%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%; animation: float 20s ease-in-out infinite;">
+            </div>
+            <div
+                style="position: absolute; bottom: 15%; right: 15%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); border-radius: 50%; animation: float 25s ease-in-out infinite reverse;">
+            </div>
+            <div
+                style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.5;">
+            </div>
+        </div>
+
+        <div class="hero-container"
+            style="position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 5rem 2rem; width: 100%; text-align: center;">
+            <div class="hero-content" style="color: white; max-width: 950px; margin: 0 auto;">
+                <!-- Badge -->
+                <div
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 0.6rem 1.5rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); margin-bottom: 2rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 19H2C2.5 19 4 17 4 17V8C4 5 7 2 12 2C17 2 20 5 20 8V17C20 17 21.5 19 22 19Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 22C13.1046 22 14 21.1046 14 20H10C10 21.1046 10.8954 22 12 22Z" fill="white" />
+                    </svg>
+                    <span
+                        style="font-family: 'Poppins', sans-serif; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.5px;">Seamless
+                        Transition Support</span>
+                </div>
+
+                <h1 class="hero-title"
+                    style="font-family: 'Merriweather', serif; font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.15;">
+                    Arrive Like a Local.<br>Land ready to excel.
+                </h1>
+                <p class="hero-description"
+                    style="font-size: 1.2rem; line-height: 1.7; opacity: 0.95; font-family: 'Poppins', sans-serif; margin-bottom: 2rem;">
+                    We manage your housing, airport transfer, and cultural orientation.
+                </p>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="../get-started.html" class="btn btn-primary"
+                        style="padding: 1rem 2rem; font-size: 1.1rem;">Start Consultation</a>
+                    <a href="../contact.html" class="btn"
+                        style="padding: 1rem 2rem; font-size: 1.1rem; border: 2px solid white; color: white; background: transparent; border-radius: 8px; text-decoration: none; font-weight: 600;">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1);
+                }
+
+                33% {
+                    transform: translate(30px, -30px) scale(1.1);
+                }
+
+                66% {
+                    transform: translate(-20px, 20px) scale(0.9);
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Introduction Section -->
+    <section style="padding: 6rem 2rem; background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    The Journey Doesn’t End at the Airport.<br>It Starts There.</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto; line-height: 1.7;">
+                    Getting the visa is a triumph, but moving your entire life to a new country is a logistical
+                    challenge. Navigating foreign rental markets, understanding public transport, and setting up
+                    essential utilities can be overwhelming for a new student.
+                </p>
+            </div>
+
+            <div
+                style="background: white; padding: 3rem; border-radius: 24px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin-bottom: 3rem;">
+                <p
+                    style="font-size: 1.1rem; line-height: 1.9; color: #444; font-family: 'Poppins', sans-serif; margin-bottom: 1.5rem;">
+                    At Vantage Education, we believe you should land with peace of mind, not a to-do list. Our Seamless
+                    Transition Support is designed to bridge the gap between "arriving" and "living."
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.9; color: #444; font-family: 'Poppins', sans-serif;">
+                    We handle the logistics of your relocation so that your only focus is settling into your new
+                    university life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features (Complete Relocation Management) -->
+    <section style="padding: 6rem 2rem; background: white;">
+        <div class="container" style="max-width: 1400px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    Complete Relocation Management</h2>
+            </div>
+
+            <div class="benefits-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+                <!-- Accommodation Assistance -->
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(10, 31, 68, 0.05); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <polyline points="9 22 9 12 15 12 15 22" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Accommodation Assistance</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">Whether you prefer
+                        on-campus dorms or private off-campus apartments, we help you secure safe, affordable, and
+                        vetted housing.</p>
+                </div>
+
+                <!-- Airport Welcome -->
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(10, 31, 68, 0.05); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13" stroke="#0a1f44" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22 2l-7 20-4-9-9-4 20-7z" stroke="#0a1f44" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Airport Welcome</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">No need to navigate
+                        confusing maps with heavy luggage. We arrange for a trusted driver to meet you and take you
+                        directly to your accommodation.</p>
+                </div>
+
+                <!-- Essential Setup -->
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(10, 31, 68, 0.05); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"
+                                stroke="#0a1f44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Essential Setup</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">We assist with setting
+                        up a local SIM card, opening a student bank account, and registering with a local doctor (GP).
+                    </p>
+                </div>
+
+                <!-- Cultural Orientation -->
+                <div style="background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid transparent; transition: all 0.3s;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--crimson)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='transparent'">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(10, 31, 68, 0.05); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="#0a1f44" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                                stroke="#0a1f44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Cultural Orientation</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">We provide a
+                        comprehensive briefing on local laws, cultural norms, and safety tips to help you adapt quickly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Solutions -->
+    <section
+        style="padding: 6rem 2rem; background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%); position: relative; overflow: hidden;">
+        <!-- Background Elements -->
+        <div style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+            <div
+                style="position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(10, 31, 68, 0.05) 0%, transparent 70%); border-radius: 50%; filter: blur(40px);">
+            </div>
+            <div
+                style="position: absolute; bottom: -50px; left: -50px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(30, 58, 138, 0.03) 0%, transparent 70%); border-radius: 50%;">
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    Accommodation Solutions</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">Your Home Away From Home
+                </p>
+            </div>
+
+            <div class="uni-card-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+                <!-- University Residences -->
+                <div class="uni-card">
+                    <h3>University Residences</h3>
+                    <p>Proximity to classes and instant community. Ideal for first-year students wanting to be close to
+                        the action.</p>
+                </div>
+
+                <!-- Private Rentals -->
+                <div class="uni-card">
+                    <h3>Private Rentals</h3>
+                    <p>Independence and more space, often cheaper in regional areas. Great for privacy and focused
+                        study.
+                    </p>
+                </div>
+
+                <!-- Homestays -->
+                <div class="uni-card">
+                    <h3>Homestays</h3>
+                    <p>Living with a local family for a truly immersive cultural experience. Enhance your language
+                        skills
+                        daily.</p>
+                </div>
+
+                <!-- Roommate Matching -->
+                <div class="uni-card">
+                    <h3>Roommate Matching</h3>
+                    <p>Connecting you with other Vantage students traveling to the same city so you have a friend and
+                        support from Day 1.</p>
+                </div>
+            </div>
+
+            <style>
+                .uni-card {
+                    background: white;
+                    padding: 2.5rem;
+                    border-radius: 20px;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                    border-left: 4px solid var(--crimson);
+                }
+
+                .uni-card h3 {
+                    font-family: 'Merriweather', serif;
+                    font-size: 1.5rem;
+                    color: #1D150E;
+                    margin-bottom: 1rem;
+                }
+
+                .uni-card p {
+                    color: #666;
+                    margin-bottom: 0;
+                    font-family: 'Poppins', sans-serif;
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- The "First 48 Hours" Package -->
+    <section style="padding: 6rem 2rem; background: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <div
+                    style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(10, 31, 68, 0.05); border-radius: 50px; margin-bottom: 1.5rem;">
+                    <span
+                        style="color: var(--crimson); font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;">We
+                        Handle the "Life Admin"</span>
+                </div>
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    The "First 48 Hours" Package</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto;">The first two days in a new
+                    country are often the most stressful. We streamline the process.</p>
+            </div>
+
+            <div style="display: grid; gap: 3rem; max-width: 900px; margin: 0 auto;">
+                <!-- Step 1 -->
+                <div class="process-step" style="display: flex; gap: 2rem; align-items: start;">
+                    <div style="flex-shrink: 0; width: 80px; text-align: center;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--crimson); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 8px 20px rgba(10,31,68,0.3);">
+                            <span style="font-size: 1.2rem; font-weight: 700; color: white;">1</span>
+                        </div>
+                    </div>
+                    <div
+                        style="flex: 1; background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-left: 4px solid var(--crimson);">
+                        <h3
+                            style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 0.5rem;">
+                            Transport Cards</h3>
+                        <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">We
+                            guide you on getting student-discounted travel passes (e.g., Oyster Card in London, Presto
+                            in
+                            Ontario).</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step" style="display: flex; gap: 2rem; align-items: start;">
+                    <div style="flex-shrink: 0; width: 80px; text-align: center;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--crimson); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 8px 20px rgba(10,31,68,0.3);">
+                            <span style="font-size: 1.2rem; font-weight: 700; color: white;">2</span>
+                        </div>
+                    </div>
+                    <div
+                        style="flex: 1; background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-left: 4px solid var(--crimson);">
+                        <h3
+                            style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 0.5rem;">
+                            Banking & Finance</h3>
+                        <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                            Assistance with setting up a student account that allows for easy international transfers
+                            from
+                            home.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step" style="display: flex; gap: 2rem; align-items: start;">
+                    <div style="flex-shrink: 0; width: 80px; text-align: center;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--crimson); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 8px 20px rgba(10,31,68,0.3);">
+                            <span style="font-size: 1.2rem; font-weight: 700; color: white;">3</span>
+                        </div>
+                    </div>
+                    <div
+                        style="flex: 1; background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-left: 4px solid var(--crimson);">
+                        <h3
+                            style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 0.5rem;">
+                            University Registration</h3>
+                        <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                            Guidance on where to go for your student ID card and course enrollment.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step" style="display: flex; gap: 2rem; align-items: start;">
+                    <div style="flex-shrink: 0; width: 80px; text-align: center;">
+                        <div
+                            style="width: 50px; height: 50px; background: #0a1f44; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 8px 20px rgba(10,31,68,0.3);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        style="flex: 1; background: linear-gradient(135deg, #0a1f44 0%, #1e3a8a 100%); padding: 2rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); color: white;">
+                        <h3
+                            style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: white; margin-bottom: 0.5rem;">
+                            Local Area Tour</h3>
+                        <p
+                            style="color: rgba(255,255,255,0.9); line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                            A virtual or physical guide to the nearest grocery stores, pharmacies, and transport links.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                @media (max-width: 900px) {
+                    .uni-card-grid {
+                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+                    }
+
+                    .benefits-grid {
+                        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    section {
+                        padding: 4rem 1.5rem !important;
+                    }
+
+                    .hero-title {
+                        font-size: 2.5rem !important;
+                    }
+
+                    .section-title {
+                        font-size: 2rem !important;
+                    }
+
+                    .process-step {
+                        flex-direction: column;
+                        gap: 1rem !important;
+                    }
+
+                    .process-step>div:first-child {
+                        width: 100% !important;
+                        text-align: left !important;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .process-step>div:first-child>div {
+                        margin: 0 !important;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .hero-title {
+                        font-size: 2rem !important;
+                    }
+
+                    .uni-card {
+                        padding: 1.5rem !important;
+                    }
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Cultural Orientation (Adapt with Confidence) -->
+    <section
+        style="padding: 6rem 2rem; background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%); position: relative; overflow: hidden;">
+        <!-- Background Elements -->
+        <div style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+            <div
+                style="position: absolute; top: -100px; left: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(10, 31, 68, 0.05) 0%, transparent 70%); border-radius: 50%; filter: blur(40px);">
+            </div>
+        </div>
+
+        <div class="container"
+            style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; text-align: center;">
+            <div style="margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    Adapt with Confidence</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">Every country has its
+                    unspoken rules. We prepare you for the reality of life abroad.</p>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; text-align: left;">
+                <!-- Part-Time Work Rules -->
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+                    <div
+                        style="width: 60px; height: 60px; background: rgba(10, 31, 68, 0.05); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 0.8rem;">
+                        Part-Time Work Rules</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">Understanding your
+                        legal work rights (usually 20 hours/week) and how to find a job.</p>
+                </div>
+
+                <!-- Safety Protocols -->
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+                    <div
+                        style="width: 60px; height: 60px; background: rgba(10, 31, 68, 0.05); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 0.8rem;">
+                        Safety Protocols</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">Emergency numbers and
+                        safe travel tips for your specific city.</p>
+                </div>
+
+                <!-- Academic Expectations -->
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+                    <div
+                        style="width: 60px; height: 60px; background: rgba(10, 31, 68, 0.05); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#0a1f44" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#0a1f44"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 0.8rem;">
+                        Academic Expectations</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">How the grading system
+                        works and what "plagiarism" means in a Western context (it’s stricter than you think!).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section style="padding: 5rem 2rem; background: #0a1f44;">
+        <div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <h2 style="font-family: 'Merriweather', serif; font-size: 2.5rem; color: white; margin-bottom: 1.5rem;">
+                Your New Life Awaits.</h2>
+            <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 2rem;">Don't let the logistics of
+                moving overshadow the excitement of your journey. Let Vantage Education handle the details while you
+                focus on your future.</p>
+            <a href="../get-started.html" class="btn btn-primary"
+                style="padding: 1rem 3rem; font-size: 1.1rem; background: white; color: var(--crimson);">Book Your
+                Pre-Departure Session</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <!-- Brand -->
+                <div>
+                    <a href="../index.html"
+                        style="text-decoration: none; display: inline-block; margin-bottom: 1.5rem;">
+                        <div class="brand-logo" style="line-height: 1;">
+                            <span
+                                style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white;">Vantage</span>
+                            <span
+                                style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white; margin-left: 0.3rem;">Education</span>
+                        </div>
+                    </a>
+                    <p style="opacity: 0.7; font-size: 0.9rem; line-height: 1.6;">Expert admissions consulting and
+                        student visa services for ambitious students.</p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Services</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/country-selection.html"
+                                style="color: white; text-decoration: none;">Strategic Planning</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/apply-university.html"
+                                style="color: white; text-decoration: none;">Application Mgmt</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/student-visa.html"
+                                style="color: white; text-decoration: none;">Visa Guidance</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/transition-support.html"
+                                style="color: white; text-decoration: none;">Transition Support</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../get-started.html"
+                                style="color: white; text-decoration: none;">Counselling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Company</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="../about.html"
+                                style="color: white; text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../ceo-message.html"
+                                style="color: white; text-decoration: none;">CEO Message</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../mission-vision.html"
+                                style="color: white; text-decoration: none;">Mission & Vision</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../contact.html"
+                                style="color: white; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Destinations -->
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Destinations</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/usa.html"
+                                style="color: white; text-decoration: none;">USA</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/uk.html"
+                                style="color: white; text-decoration: none;">UK</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/canada.html"
+                                style="color: white; text-decoration: none;">Canada</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/australia.html"
+                                style="color: white; text-decoration: none;">Australia</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../countries/germany.html"
+                                style="color: white; text-decoration: none;">Germany</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="../services/country-selection.html"
+                                style="color: white; text-decoration: none;">View All Countries</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="opacity: 0.5; font-size: 0.85rem; margin: 0;">&copy; 2025 Vantage Education. All rights
+                    reserved.</p>
+                <div style="display: flex; gap: 2rem; opacity: 0.5; font-size: 0.85rem;">
+                    <a href="../terms.html" style="color: white; text-decoration: none;">Terms & Conditions</a>
+                    <a href="../privacy.html" style="color: white; text-decoration: none;">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

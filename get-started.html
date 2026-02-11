@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started | Vantage Education</title>
+    <meta name="description"
+        content="Book a free consultation with Vantage Education. Start your journey to your dream university with expert guidance from former admissions officers.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo" style="text-decoration: none;">
+                    <div class="brand-logo" style="line-height: 1;">
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white;">Vantage</span>
+                        <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.8rem; color: white; margin-left: 0.3rem;">Education</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="services/undergraduate.html" class="dropdown-item">
+                                <div class="dropdown-title">Undergraduate Admissions</div>
+                                <div class="dropdown-description">Ivy League & top university application support</div>
+                            </a>
+                            <a href="services/grad-school.html" class="dropdown-item">
+                                <div class="dropdown-title">Graduate School Admissions</div>
+                                <div class="dropdown-description">Masters & PhD program applications</div>
+                            </a>
+                            <a href="services/student-visa.html" class="dropdown-item">
+                                <div class="dropdown-title">Student Visa Services</div>
+                                <div class="dropdown-description">F-1 visa application & documentation</div>
+                            </a>
+                            <a href="services/fao-review.html" class="dropdown-item">
+                                <div class="dropdown-title">FAO Application Review</div>
+                                <div class="dropdown-description">Expert review by former admissions officers</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About <span class="nav-arrow">▼</span></a>
+                        <div class="nav-dropdown">
+                            <a href="about.html" class="dropdown-item">
+                                <div class="dropdown-title">About Us</div>
+                                <div class="dropdown-description">Our story and mission</div>
+                            </a>
+                            <a href="results.html" class="dropdown-item">
+                                <div class="dropdown-title">Our Results</div>
+                                <div class="dropdown-description">Student success stories & outcomes</div>
+                            </a>
+                            <a href="press.html" class="dropdown-item">
+                                <div class="dropdown-title">Press & Media</div>
+                                <div class="dropdown-description">Vantage in the news</div>
+                            </a>
+                            <a href="careers.html" class="dropdown-item">
+                                <div class="dropdown-title">Careers</div>
+                                <div class="dropdown-description">Join our team</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="get-started.html" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-container" id="mobileMenu">
+        <a href="index.html" class="mobile-menu-link">Home</a>
+        <a href="about.html" class="mobile-menu-link">About</a>
+        <a href="services/undergraduate.html" class="mobile-menu-link">Services</a>
+        <a href="contact.html" class="mobile-menu-link">Contact</a>
+        <a href="get-started.html" class="btn btn-primary" style="margin-top: 1rem;">Get Started</a>
+        <button onclick="toggleMobileMenu()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 2rem;">✕</button>
+    </div>
+            <button onclick="toggleMobileMenu()"
+                style="background: none; border: none; font-size: 2rem; cursor: pointer; color: #0a1f44; padding: 0.5rem; line-height: 1;">✕</button>
+        </div>
+
+        <div
+            style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; max-height: 90vh; padding-bottom: 2rem;">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+
+            <!-- Services Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-services-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Services <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-services-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="services/country-selection.html" class="mobile-sub-link" style="font-size: 1rem;">Strategic
+                        Planning</a>
+                    <a href="services/apply-university.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Application Mgmt</a>
+                    <a href="services/student-visa.html" class="mobile-sub-link" style="font-size: 1rem;">Visa
+                        Guidance</a>
+                    <a href="services/transition-support.html" class="mobile-sub-link"
+                        style="font-size: 1rem;">Transition Support</a>
+                    <a href="get-started.html" class="mobile-sub-link" style="font-size: 1rem;">Study Abroad
+                        Counselling</a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-about-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    About <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-about-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <a href="about.html" class="mobile-sub-link" style="font-size: 1rem;">About Us</a>
+                    <a href="ceo-message.html" class="mobile-sub-link" style="font-size: 1rem;">CEO Message</a>
+                    <a href="mission-vision.html" class="mobile-sub-link" style="font-size: 1rem;">Mission & Vision</a>
+                </div>
+            </div>
+
+            <!-- Countries Dropdown -->
+            <div class="mobile-menu-group">
+                <button onclick="toggleMobileSubMenu('mobile-countries-submenu')" class="mobile-menu-link"
+                    style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0; color: #0a1f44;">
+                    Countries <span style="font-size: 1rem; transition: transform 0.3s ease;">▼</span>
+                </button>
+                <div id="mobile-countries-submenu" class="mobile-sub-menu"
+                    style="display: none; padding-left: 1rem; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; border-left: 2px solid #eee; margin-left: 0.5rem;">
+                    <!-- Country links -->
+                    <a href="countries/canada.html" class="mobile-sub-link" style="font-size: 0.95rem;">Canada</a>
+                    <a href="countries/usa.html" class="mobile-sub-link" style="font-size: 0.95rem;">USA</a>
+                    <a href="countries/uk.html" class="mobile-sub-link" style="font-size: 0.95rem;">UK</a>
+                    <a href="countries/australia.html" class="mobile-sub-link" style="font-size: 0.95rem;">Australia</a>
+                    <a href="countries/ireland.html" class="mobile-sub-link" style="font-size: 0.95rem;">Ireland</a>
+                    <a href="countries/germany.html" class="mobile-sub-link" style="font-size: 0.95rem;">Germany</a>
+                    <a href="countries/new-zealand.html" class="mobile-sub-link" style="font-size: 0.95rem;">N.
+                        Zealand</a>
+                    <a href="countries/france.html" class="mobile-sub-link" style="font-size: 0.95rem;">France</a>
+                    <a href="countries/malaysia.html" class="mobile-sub-link" style="font-size: 0.95rem;">Malaysia</a>
+                    <a href="countries/singapore.html" class="mobile-sub-link" style="font-size: 0.95rem;">Singapore</a>
+                    <a href="countries/switzerland.html" class="mobile-sub-link"
+                        style="font-size: 0.95rem;">Switzerland</a>
+                    <a href="countries/uae.html" class="mobile-sub-link" style="font-size: 0.95rem;">UAE</a>
+                </div>
+            </div>
+
+
+            <a href="contact.html" class="mobile-menu-link" style="color: #0a1f44;">Contact</a>
+            <a href="get-started.html" class="btn btn-primary" style="text-align: center; margin-top: 1rem;">Get
+                Started</a>
+        </div>
+    </div>
+
+    <section class="hero"
+        style="min-height: 70vh; position: relative; overflow: hidden; display: flex; align-items: center; background: linear-gradient(135deg, #0a1f44 0%, #1e3a8a 50%, #0a1f44 100%);">
+        <!-- Animated Background Elements -->
+        <div style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+            <div
+                style="position: absolute; top: 10%; left: 10%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%; animation: float 20s ease-in-out infinite;">
+            </div>
+            <div
+                style="position: absolute; bottom: 15%; right: 15%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); border-radius: 50%; animation: float 25s ease-in-out infinite reverse;">
+            </div>
+            <div
+                style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.5;">
+            </div>
+        </div>
+
+        <div class="hero-container"
+            style="position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 5rem 2rem; width: 100%; text-align: center;">
+            <div class="hero-content" style="color: white; max-width: 900px; margin: 0 auto;">
+                <!-- Badge -->
+                <div
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 0.6rem 1.5rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); margin-bottom: 2rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span
+                        style="font-family: 'Poppins', sans-serif; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.5px;">Free
+                        Consultation</span>
+                </div>
+
+                <h1 class="hero-title"
+                    style="font-family: 'Merriweather', serif; font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.15;">
+                    Start Your Journey<br>to Your Dream University
+                </h1>
+                <p class="hero-description"
+                    style="font-size: 1.2rem; line-height: 1.7; opacity: 0.95; font-family: 'Poppins', sans-serif; margin-bottom: 2rem;">
+                    Book a free consultation with our expert admissions counselors. Discover how we can help you achieve
+                    your academic dreams with personalized guidance and proven strategies.
+                </p>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="#consultation-form" class="btn btn-primary"
+                        style="padding: 1rem 2rem; font-size: 1.1rem;">Schedule Consultation</a>
+                    <a href="contact.html" class="btn"
+                        style="padding: 1rem 2rem; font-size: 1.1rem; border: 2px solid white; color: white; background: transparent; border-radius: 8px; text-decoration: none; font-weight: 600;">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1);
+                }
+
+                33% {
+                    transform: translate(30px, -30px) scale(1.1);
+                }
+
+                66% {
+                    transform: translate(-20px, 20px) scale(0.9);
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Consultation Form Section -->
+    <section id="consultation-form"
+        style="padding: 6rem 2rem; background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;">
+                <!-- Left: Form -->
+                <div>
+                    <div style="text-align: left; margin-bottom: 3rem;">
+                        <h2
+                            style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                            Book Your Free Consultation</h2>
+                        <p
+                            style="font-size: 1.1rem; color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif;">
+                            Fill out the form below and our team will contact you within 24 hours to schedule your free
+                            consultation.
+                        </p>
+                    </div>
+
+                    <form
+                        style="background: white; padding: 3rem; border-radius: 24px; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="display: block; font-family: 'Poppins', sans-serif; font-weight: 600; color: #1D150E; margin-bottom: 0.5rem; font-size: 0.95rem;">Full
+                                Name *</label>
+                            <input type="text" required
+                                style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 1rem; font-family: 'Poppins', sans-serif; transition: all 0.3s;"
+                                onfocus="this.style.borderColor='var(--crimson)'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e0e0e0'">
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="display: block; font-family: 'Poppins', sans-serif; font-weight: 600; color: #1D150E; margin-bottom: 0.5rem; font-size: 0.95rem;">Email
+                                Address *</label>
+                            <input type="email" required
+                                style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 1rem; font-family: 'Poppins', sans-serif; transition: all 0.3s;"
+                                onfocus="this.style.borderColor='var(--crimson)'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e0e0e0'">
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="display: block; font-family: 'Poppins', sans-serif; font-weight: 600; color: #1D150E; margin-bottom: 0.5rem; font-size: 0.95rem;">Phone
+                                Number *</label>
+                            <input type="tel" required
+                                style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 1rem; font-family: 'Poppins', sans-serif; transition: all 0.3s;"
+                                onfocus="this.style.borderColor='var(--crimson)'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e0e0e0'">
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="display: block; font-family: 'Poppins', sans-serif; font-weight: 600; color: #1D150E; margin-bottom: 0.5rem; font-size: 0.95rem;">Current
+                                Education Level *</label>
+                            <select required
+                                style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; transition: all 0.3s;"
+                                onfocus="this.style.borderColor='var(--crimson)'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e0e0e0'">
+                                <option value="">Select your education level</option>
+                                <option value="high-school">High School Student</option>
+                                <option value="undergraduate">Current Undergraduate</option>
+                                <option value="graduate">Graduate Student</option>
+                                <option value="professional">Working Professional</option>
+                            </select>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="display: block; font-family: 'Poppins', sans-serif; font-weight: 600; color: #1D150E; margin-bottom: 0.5rem; font-size: 0.95rem;">Service
+                                of Interest</label>
+                            <select
+                                style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; transition: all 0.3s;"
+                                onfocus="this.style.borderColor='var(--crimson)'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e0e0e0'">
+                                <option value="">Select a service (optional)</option>
+                                <option value="country-selection">Country Selection Counselling</option>
+                                <option value="prepare-application">Preparing Your University Application</option>
+                                <option value="apply-university">Applying to Your Dream University</option>
+                                <option value="all-services">All Services</option>
+                            </select>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="display: block; font-family: 'Poppins', sans-serif; font-weight: 600; color: #1D150E; margin-bottom: 0.5rem; font-size: 0.95rem;">Message
+                                (Optional)</label>
+                            <textarea rows="4"
+                                style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 1rem; font-family: 'Poppins', sans-serif; resize: vertical; transition: all 0.3s;"
+                                onfocus="this.style.borderColor='var(--crimson)'; this.style.outline='none'"
+                                onblur="this.style.borderColor='#e0e0e0'"
+                                placeholder="Tell us about your goals, questions, or any specific requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; padding: 1.2rem; font-size: 1.1rem; font-weight: 700; border: none; cursor: pointer; transition: all 0.3s;"
+                            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 30px rgba(10,31,68,0.3)'"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                            Submit & Schedule Consultation
+                        </button>
+
+                        <p
+                            style="font-size: 0.85rem; color: #666; margin-top: 1rem; text-align: center; font-family: 'Poppins', sans-serif;">
+                            By submitting this form, you agree to our <a href="terms.html"
+                                style="color: var(--crimson); text-decoration: none;">Terms & Conditions</a> and <a
+                                href="privacy.html" style="color: var(--crimson); text-decoration: none;">Privacy
+                                Policy</a>.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Right: Benefits/Info -->
+                <div>
+                    <div
+                        style="background: linear-gradient(135deg, #0a1f44 0%, #1e3a8a 100%); border-radius: 24px; padding: 3rem; color: white; position: sticky; top: 2rem;">
+                        <h3 style="font-family: 'Merriweather', serif; font-size: 2rem; margin-bottom: 2rem;">What to
+                            Expect</h3>
+
+                        <div style="display: flex; flex-direction: column; gap: 2rem;">
+                            <div style="display: flex; gap: 1.5rem; align-items: start;">
+                                <div
+                                    style="width: 50px; height: 50px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4
+                                        style="font-family: 'Merriweather', serif; font-size: 1.2rem; margin-bottom: 0.5rem;">
+                                        Free 30-Minute Consultation</h4>
+                                    <p
+                                        style="opacity: 0.9; line-height: 1.6; font-family: 'Poppins', sans-serif; font-size: 0.95rem; margin: 0;">
+                                        Speak with an expert admissions counselor to discuss your goals and learn how we
+                                        can help.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 1.5rem; align-items: start;">
+                                <div
+                                    style="width: 50px; height: 50px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4
+                                        style="font-family: 'Merriweather', serif; font-size: 1.2rem; margin-bottom: 0.5rem;">
+                                        Personalized Assessment</h4>
+                                    <p
+                                        style="opacity: 0.9; line-height: 1.6; font-family: 'Poppins', sans-serif; font-size: 0.95rem; margin: 0;">
+                                        We'll evaluate your academic profile, goals, and preferences to provide tailored
+                                        recommendations.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 1.5rem; align-items: start;">
+                                <div
+                                    style="width: 50px; height: 50px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4
+                                        style="font-family: 'Merriweather', serif; font-size: 1.2rem; margin-bottom: 0.5rem;">
+                                        Customized Strategy</h4>
+                                    <p
+                                        style="opacity: 0.9; line-height: 1.6; font-family: 'Poppins', sans-serif; font-size: 0.95rem; margin: 0;">
+                                        Receive a personalized roadmap and strategy tailored to your unique situation
+                                        and goals.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 1.5rem; align-items: start;">
+                                <div
+                                    style="width: 50px; height: 50px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 11L12 14L22 4" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4
+                                        style="font-family: 'Merriweather', serif; font-size: 1.2rem; margin-bottom: 0.5rem;">
+                                        No Obligation</h4>
+                                    <p
+                                        style="opacity: 0.9; line-height: 1.6; font-family: 'Poppins', sans-serif; font-size: 0.95rem; margin: 0;">
+                                        The consultation is completely free with no obligation. Explore your options and
+                                        make an informed decision.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section style="padding: 6rem 2rem; background: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    How It Works</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+                    A simple, straightforward process to get you started on your journey to your dream university.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2.5rem;">
+                <div style="text-align: center;">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; position: relative;">
+                        <div
+                            style="position: absolute; inset: -5px; background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%); border-radius: 50%; opacity: 0.2;">
+                        </div>
+                        <span
+                            style="font-size: 2rem; font-weight: 700; color: var(--crimson); position: relative; z-index: 1;">1</span>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Submit Form</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Fill out the consultation form with your basic information and goals. It takes just a few
+                        minutes.
+                    </p>
+                </div>
+
+                <div style="text-align: center;">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; position: relative;">
+                        <div
+                            style="position: absolute; inset: -5px; background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%); border-radius: 50%; opacity: 0.2;">
+                        </div>
+                        <span
+                            style="font-size: 2rem; font-weight: 700; color: var(--crimson); position: relative; z-index: 1;">2</span>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        We Contact You</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Our team will reach out within 24 hours to schedule your free consultation at a time that works
+                        for you.
+                    </p>
+                </div>
+
+                <div style="text-align: center;">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; position: relative;">
+                        <div
+                            style="position: absolute; inset: -5px; background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%); border-radius: 50%; opacity: 0.2;">
+                        </div>
+                        <span
+                            style="font-size: 2rem; font-weight: 700; color: var(--crimson); position: relative; z-index: 1;">3</span>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Free Consultation</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Have a 30-minute conversation with an expert counselor to discuss your goals and explore how we
+                        can help.
+                    </p>
+                </div>
+
+                <div style="text-align: center;">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(10,31,68,0.1) 0%, rgba(30,58,138,0.1) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; position: relative;">
+                        <div
+                            style="position: absolute; inset: -5px; background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%); border-radius: 50%; opacity: 0.2;">
+                        </div>
+                        <span
+                            style="font-size: 2rem; font-weight: 700; color: var(--crimson); position: relative; z-index: 1;">4</span>
+                    </div>
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.4rem; color: #1D150E; margin-bottom: 1rem;">
+                        Begin Your Journey</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        If you decide to work with us, we'll create a personalized plan and start helping you achieve
+                        your academic dreams.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Book a Consultation Section -->
+    <section style="padding: 6rem 2rem; background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    Why Book a Free Consultation?</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+                    Discover how our expert guidance can help you achieve your academic goals and maximize your chances
+                    of acceptance.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Expert Insights</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Get valuable insights from former admissions officers and Ivy League graduates who understand
+                        exactly what top universities are looking for.
+                    </p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Personalized Assessment</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Receive an honest assessment of your profile, strengths, and areas for improvement, along with
+                        realistic expectations for your target universities.
+                    </p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Clear Roadmap</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Walk away with a clear understanding of the steps you need to take and a strategic roadmap
+                        tailored to your unique situation and goals.
+                    </p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        No Pressure</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        The consultation is completely free with no obligation. Ask questions, explore your options, and
+                        make an informed decision at your own pace.
+                    </p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Proven Track Record</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Learn about our success stories, with over 1,330+ Ivy League acceptances and a 98% success rate,
+                        and how we can help you achieve similar results.
+                    </p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Time-Saving</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Get answers to your questions and clarity on your path forward, saving you time and helping you
+                        avoid costly mistakes in the application process.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 6rem 2rem; background: white;">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2
+                    style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1D150E; margin-bottom: 1rem;">
+                    Frequently Asked Questions</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">Common questions about
+                    booking a consultation with Vantage Education.</p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div
+                    style="background: #f8f9fa; padding: 2rem; border-radius: 16px; border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Is the consultation really free?</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Yes, absolutely! The initial consultation is completely free with no obligation. We want you to
+                        have the opportunity to learn about our services and see if we're a good fit for your needs
+                        before making any commitment.
+                    </p>
+                </div>
+
+                <div
+                    style="background: #f8f9fa; padding: 2rem; border-radius: 16px; border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        How long does the consultation take?</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        The free consultation typically lasts 30 minutes. This gives us enough time to understand your
+                        goals, answer your questions, and provide initial insights while respecting your time.
+                    </p>
+                </div>
+
+                <div
+                    style="background: #f8f9fa; padding: 2rem; border-radius: 16px; border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        What should I prepare for the consultation?</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        You don't need to prepare anything specific, but it's helpful to think about your academic
+                        goals, target universities or countries you're interested in, and any questions you'd like to
+                        ask. Having your academic background information handy can also be useful.
+                    </p>
+                </div>
+
+                <div
+                    style="background: #f8f9fa; padding: 2rem; border-radius: 16px; border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        How quickly will you contact me after I submit the form?</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        We aim to contact you within 24 hours of receiving your form submission. Our team will reach out
+                        via email or phone to schedule your consultation at a time that's convenient for you.
+                    </p>
+                </div>
+
+                <div
+                    style="background: #f8f9fa; padding: 2rem; border-radius: 16px; border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Can I book a consultation if I'm not sure which service I need?</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Absolutely! That's exactly what the consultation is for. We'll help you understand your options,
+                        assess your needs, and recommend the best services for your situation. You don't need to know
+                        which service you want before booking.
+                    </p>
+                </div>
+
+                <div
+                    style="background: #f8f9fa; padding: 2rem; border-radius: 16px; border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        What happens after the consultation?</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        After the consultation, you'll have a clear understanding of how we can help you. If you decide
+                        to work with us, we'll create a personalized plan and get started. If not, there's no
+                        obligation—you'll still have valuable insights to guide your journey.
+                    </p>
+                </div>
+
+                <div
+                    style="background: #f8f9fa; padding: 2rem; border-radius: 16px; border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Do you offer consultations for parents as well?</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Yes! We welcome parents to join the consultation. We understand that parents play an important
+                        role in the decision-making process, and we're happy to address their questions and concerns as
+                        well.
+                    </p>
+                </div>
+
+                <div
+                    style="background: #f8f9fa; padding: 2rem; border-radius: 16px; border-left: 4px solid var(--crimson);">
+                    <h3
+                        style="font-family: 'Merriweather', serif; font-size: 1.3rem; color: #1D150E; margin-bottom: 1rem;">
+                        Can I reschedule my consultation?</h3>
+                    <p style="color: #666; line-height: 1.7; font-family: 'Poppins', sans-serif; margin: 0;">
+                        Of course! We understand that schedules can change. Simply contact us, and we'll be happy to
+                        reschedule your consultation for a time that works better for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 5rem 2rem; background: #0a1f44;">
+        <div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <h2 style="font-family: 'Merriweather', serif; font-size: 2.5rem; color: white; margin-bottom: 1.5rem;">
+                Ready to Begin Your Journey?</h2>
+            <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 2rem;">Take the first step towards
+                your dream university. Book your free consultation today.</p>
+            <a href="#consultation-form" class="btn btn-primary"
+                style="padding: 1rem 3rem; font-size: 1.1rem; background: white; color: var(--crimson);">Schedule Free
+                Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <div>
+                    <a href="index.html" style="text-decoration: none; display: inline-block; margin-bottom: 1.5rem;">
+                        <div class="brand-logo" style="line-height: 1;">
+                            <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white;">Vantage</span>
+                            <span style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 2rem; color: white; margin-left: 0.3rem;">Education</span>
+                        </div>
+                    </a>
+                    <p style="opacity: 0.7; font-size: 0.9rem; line-height: 1.6;">Expert admissions consulting and student visa services for ambitious students.</p>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Services</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="services/undergraduate.html" style="color: white; text-decoration: none;">Undergraduate Admissions</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/grad-school.html" style="color: white; text-decoration: none;">Graduate Admissions</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/student-visa.html" style="color: white; text-decoration: none;">Student Visa Services</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="services/fao-review.html" style="color: white; text-decoration: none;">FAO Review</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Company</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="results.html" style="color: white; text-decoration: none;">Our Results</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="press.html" style="color: white; text-decoration: none;">Press</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="careers.html" style="color: white; text-decoration: none;">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Contact</h4>
+                    <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="get-started.html" style="color: white; text-decoration: none;">Get Started</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="contact.html" style="color: white; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="opacity: 0.5; font-size: 0.85rem; margin: 0;">&copy; 2025 Vantage Education. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem; opacity: 0.5; font-size: 0.85rem;">
+                    <a href="terms.html" style="color: white; text-decoration: none;">Terms & Conditions</a>
+                    <a href="privacy.html" style="color: white; text-decoration: none;">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
