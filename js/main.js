@@ -147,32 +147,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// Mobile Menu Toggle (Global function)
-// Mobile Menu Toggle (Global function)
+// Mobile Menu Toggle
 function toggleMobileMenu() {
     const menu = document.getElementById('mobileMenu');
+    const body = document.body;
 
-    // Toggle the class that moves the menu from "left: -150%" to "left: 0"
-    menu.classList.toggle('active');
-
-    // Handle scrolling
     if (menu.classList.contains('active')) {
-        document.body.style.overflow = 'hidden';
+        menu.classList.remove('active');
+        body.classList.remove('menu-active');
+        body.style.overflow = '';
     } else {
-        document.body.style.overflow = 'auto';
+        menu.classList.add('active');
+        body.classList.add('menu-active');
+        body.style.overflow = 'hidden';
     }
 }
 
-function toggleMobileSubMenu(subMenuId) {
-    const subMenu = document.getElementById(subMenuId);
-    if (subMenu) {
-        subMenu.style.display = subMenu.style.display === 'flex' ? 'none' : 'flex';
+// Mobile Accordion
+function toggleAccordion(id) {
+    const content = document.getElementById(id);
+    // Find the button that triggered this. 
+    // Since we pass ID, we can find the button if it's the previous sibling or we can pass 'this'
+    // But since HTML is injected, let's assume structure: button + div
 
-        // Rotate arrow if present
-        const btn = document.querySelector(`button[onclick="toggleMobileSubMenu('${subMenuId}')"] span`);
-        if (btn) {
-            btn.style.transform = subMenu.style.display === 'none' ? 'rotate(0deg)' : 'rotate(180deg)';
-            btn.style.transition = 'transform 0.3s ease';
+    // Changing function signature in HTML requires re-injection. 
+    // PREFER: Finding the trigger by relation to content ID.
+    // In inject_nav.py: <button ... onclick="toggleAccordion('mobileServices')"> ... </button> <div id="mobileServices">
+
+    // We need to find the button.
+    // We can search for the button that controls this ID.
+    // Or simpler: get previousElementSibling of content.
+    const trigger = content.previousElementSibling;
+
+    if (content.style.display === 'flex') {
+        content.style.display = 'none';
+        content.classList.remove('active');
+        if (trigger) trigger.classList.remove('arrow-active');
+    } else {
+        content.style.display = 'flex'; // Flex as per CSS
+        content.classList.add('active');
+        if (trigger) trigger.classList.add('arrow-active');
+    }
+}
+
+// Navbar Scroll Effect
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.vantage-navbar');
+    if (navbar) {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
         }
     }
-}
+});
