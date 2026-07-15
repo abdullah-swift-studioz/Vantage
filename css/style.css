@@ -317,6 +317,14 @@
             /* Above mobile menu */
             position: relative;
             transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-brand-mark {
+            height: 1.6rem;
+            width: auto;
         }
 
         /* Desktop Menu */
@@ -1426,6 +1434,20 @@
             text-align: center;
             opacity: 0.6;
             font-size: 0.85rem;
+        }
+
+        .footer-legal a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-legal a:hover {
+            color: var(--crimson-dark);
+        }
+
+        .footer-social a:hover {
+            background: var(--crimson-dark) !important;
         }
 
         /* Contact Form Styling */
