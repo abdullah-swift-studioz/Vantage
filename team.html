@@ -200,98 +200,355 @@
         </div>
 
         <div class="container" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
-            <div style="text-align: center; margin-bottom: 5rem;">
-                <div
-                    style="display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(22, 163, 74, 0.1); padding: 0.5rem 1rem; border-radius: 50px; margin-bottom: 2rem;">
-                    <span
-                        style="font-size: 0.85rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #16a34a;">Leadership</span>
-                </div>
-                <p style="font-size: 1.15rem; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.6;">
-                    The people guiding Vantage Education’s strategy, partnerships, and student success.
+            <div class="team-intro" style="text-align: center; margin-bottom: 4.5rem;">
+                <p class="team-eyebrow"
+                    style="font-family: 'Merriweather', serif; font-style: italic; font-size: 1.35rem; color: var(--crimson-dark); margin-bottom: 0.75rem; letter-spacing: 0.2px;">
+                    Meet our People
                 </p>
-            </div>
-
-            <div style="text-align: center; margin-bottom: 4rem;">
-                <h2 style="font-family: 'Merriweather', serif; font-size: 2rem; font-weight: 700; color: #1D150E; margin-bottom: 1rem;">
+                <h2 class="team-heading"
+                    style="font-family: 'Merriweather', serif; font-size: 2.75rem; font-weight: 700; color: #1D150E; margin-bottom: 1.5rem; line-height: 1.2;">
                     College Counselling Team
                 </h2>
+                <p style="font-size: 1.15rem; color: #666; max-width: 640px; margin: 0 auto 1.25rem; line-height: 1.6;">
+                    The people guiding Vantage Education’s strategy, partnerships, and student success.
+                </p>
                 <p style="font-size: 1.05rem; color: #555; max-width: 750px; margin: 0 auto; line-height: 1.8;">
                     Our college counselling team is dedicated to guiding students in taking their first steps toward a successful future through international education. With a network of over 500 global education partners, we provide end-to-end support from advising on university programs and country selection to managing admissions, scholarships and assisting with student visa applications.
                 </p>
             </div>
 
-            <div class="team-profiles" style="display: flex; flex-direction: column; gap: 5rem;">
+            <div class="team-grid">
                 <!-- Assadullah Khan -->
-                <div class="team-card team-card-horizontal" style="display: grid; grid-template-columns: 320px 1fr; gap: 3rem; align-items: start; text-align: left;">
-                    <div style="position: relative; flex-shrink: 0;">
-                        <div style="position: absolute; inset: -12px; border: 1px solid rgba(22, 163, 74, 0.2); border-radius: 24px; z-index: 0; transform: rotate(-2deg);"></div>
-                        <div style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); z-index: 1; width: 320px; height: 400px; background: #f3f4f6;">
-                            <img src="images/team/asad.jpeg" alt="Assadullah Khan" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease;">
-                        </div>
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/asad.jpeg" alt="Assadullah Khan">
                     </div>
-                    <div>
-                        <h3 style="font-family: 'Merriweather', serif; font-size: 1.75rem; font-weight: 700; color: #1D150E; margin-bottom: 0.25rem;">Assadullah Khan</h3>
-                        <p style="color: var(--crimson); font-size: 1rem; font-weight: 600; margin-bottom: 1.5rem;">Founding Member, Director</p>
-                        <div style="font-size: 1rem; color: #555; line-height: 1.8;">
-                            <p style="margin-bottom: 1rem;">Assadullah Khan is a founding member of Express Visa Facilitation (EVF). He has over 30 years of leadership experience at renowned air express companies in Pakistan.</p>
-                            <p style="margin-bottom: 1rem;">He served with Gerry's/FedEx as General Manager North and played an important role in improving service standards across the organization. He was also part of the team that launched Gerry's Visa Drop Box Service (VDB) and Gerry's Courier Assisted Visa Application (CAVA) in collaboration with the US Embassy and UK High Commission in Pakistan. This unique and wide-ranging service model was then adopted by many embassies and consulates in Pakistan and around the globe. Prior to this, he worked for DHL and TCS as Area Manager.</p>
-                            <p style="margin-bottom: 1rem;">Assad moved to Canada in 2018 and started working as a freelancer with reputed immigration law firms, and gained immense hands-on experience in delivering an outstanding service and helped many families around the globe to relocate to Canada.</p>
-                            <p style="margin-bottom: 0;">Outside work, Assad is dedicated to his family and enjoys travelling.</p>
-                        </div>
+                    <div class="team-body">
+                        <h3 class="team-name">Assadullah Khan</h3>
+                        <p class="team-role">Founding Member, Director</p>
+                        <p class="team-teaser">A founding member of Express Visa Facilitation (EVF), with over 30 years of leadership experience at renowned air express companies in Pakistan.</p>
+                        <button type="button" class="team-readmore" aria-haspopup="dialog" data-bio="bio-assadullah">
+                            Read more <span class="team-readmore-arrow" aria-hidden="true">→</span>
+                        </button>
                     </div>
-                </div>
+                    <div class="team-bio-source" id="bio-assadullah" hidden>
+                        <p>Assadullah Khan is a founding member of Express Visa Facilitation (EVF). He has over 30 years of leadership experience at renowned air express companies in Pakistan.</p>
+                        <p>He served with Gerry's/FedEx as General Manager North and played an important role in improving service standards across the organization. He was also part of the team that launched Gerry's Visa Drop Box Service (VDB) and Gerry's Courier Assisted Visa Application (CAVA) in collaboration with the US Embassy and UK High Commission in Pakistan. This unique and wide-ranging service model was then adopted by many embassies and consulates in Pakistan and around the globe. Prior to this, he worked for DHL and TCS as Area Manager.</p>
+                        <p>Assad moved to Canada in 2018 and started working as a freelancer with reputed immigration law firms, and gained immense hands-on experience in delivering an outstanding service and helped many families around the globe to relocate to Canada.</p>
+                        <p>Outside work, Assad is dedicated to his family and enjoys travelling.</p>
+                    </div>
+                </article>
 
                 <!-- Muhammad Hashim -->
-                <div class="team-card team-card-horizontal" style="display: grid; grid-template-columns: 320px 1fr; gap: 3rem; align-items: start; text-align: left;">
-                    <div style="position: relative; flex-shrink: 0;">
-                        <div style="position: absolute; inset: -12px; border: 1px solid rgba(22, 163, 74, 0.2); border-radius: 24px; z-index: 0; transform: rotate(2deg);"></div>
-                        <div style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); z-index: 1; width: 320px; height: 400px; background: #f3f4f6;">
-                            <img src="images/team/hashim.png" alt="Muhammad Hashim" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease;">
-                        </div>
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/hashim.png" alt="Muhammad Hashim">
                     </div>
-                    <div>
-                        <h3 style="font-family: 'Merriweather', serif; font-size: 1.75rem; font-weight: 700; color: #1D150E; margin-bottom: 0.25rem;">Muhammad Hashim</h3>
-                        <p style="color: var(--crimson); font-size: 1rem; font-weight: 600; margin-bottom: 1.5rem;">Founder & Director, Vantage Education</p>
-                        <div style="font-size: 1rem; color: #555; line-height: 1.8;">
-                            <p style="margin-bottom: 1rem;">Muhammad Hashim is the Founder member and Director of Vantage Education Private Limited, a leading education consultancy dedicated to helping students achieve their international academic ambitions through trusted guidance and personalised support. With over two decades of leadership experience in the visa outsourcing in Pakistan and the UK, he has built a reputation for professionalism, integrity, and delivering exceptional client outcomes.</p>
-                            <p style="margin-bottom: 1rem;">Inspired by the transformative power of global education, Hashim established Vantage Education to bridge the gap between talented students and world-class universities. Under his leadership, the company provides comprehensive services including career counselling, university admissions, scholarship guidance, student visa assistance, and pre-departure support.</p>
-                            <p style="margin-bottom: 0;">His vision is to empower students with informed choices, ethical advice, and end-to-end assistance throughout their study abroad journey. Hashim is committed to making international education more accessible, transparent, and rewarding for aspiring students and their families.</p>
-                        </div>
+                    <div class="team-body">
+                        <h3 class="team-name">Muhammad Hashim</h3>
+                        <p class="team-role">Founder &amp; Director, Vantage Education</p>
+                        <p class="team-teaser">Founder and Director of Vantage Education, with over two decades of leadership experience in visa outsourcing across Pakistan and the UK.</p>
+                        <button type="button" class="team-readmore" aria-haspopup="dialog" data-bio="bio-hashim">
+                            Read more <span class="team-readmore-arrow" aria-hidden="true">→</span>
+                        </button>
                     </div>
-                </div>
+                    <div class="team-bio-source" id="bio-hashim" hidden>
+                        <p>Muhammad Hashim is the Founder member and Director of Vantage Education Private Limited, a leading education consultancy dedicated to helping students achieve their international academic ambitions through trusted guidance and personalised support. With over two decades of leadership experience in the visa outsourcing in Pakistan and the UK, he has built a reputation for professionalism, integrity, and delivering exceptional client outcomes.</p>
+                        <p>Inspired by the transformative power of global education, Hashim established Vantage Education to bridge the gap between talented students and world-class universities. Under his leadership, the company provides comprehensive services including career counselling, university admissions, scholarship guidance, student visa assistance, and pre-departure support.</p>
+                        <p>His vision is to empower students with informed choices, ethical advice, and end-to-end assistance throughout their study abroad journey. Hashim is committed to making international education more accessible, transparent, and rewarding for aspiring students and their families.</p>
+                    </div>
+                </article>
 
                 <!-- Laura Charge -->
-                <div class="team-card team-card-horizontal" style="display: grid; grid-template-columns: 320px 1fr; gap: 3rem; align-items: start; text-align: left;">
-                    <div style="position: relative; flex-shrink: 0;">
-                        <div style="position: absolute; inset: -12px; border: 1px solid rgba(22, 163, 74, 0.2); border-radius: 24px; z-index: 0; transform: rotate(-2deg);"></div>
-                        <div style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); z-index: 1; width: 320px; height: 400px; background: #f3f4f6;">
-                            <img src="images/team/laura-charge.png" alt="Laura Charge" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease;">
-                        </div>
+                <article class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/laura-charge.png" alt="Laura Charge">
                     </div>
-                    <div>
-                        <h3 style="font-family: 'Merriweather', serif; font-size: 1.75rem; font-weight: 700; color: #1D150E; margin-bottom: 0.25rem;">Laura Charge</h3>
-                        <p style="color: var(--crimson); font-size: 1rem; font-weight: 600; margin-bottom: 1.5rem;">Visa and Admissions Advisor, UK Admissions</p>
-                        <div style="font-size: 1rem; color: #555; line-height: 1.8;">
-                            <p style="margin-bottom: 1rem;">Laura Charge of Charge Solutions is partnering with Vantage Education Pakistan, leading our UK Admissions operations!</p>
-                            <p style="margin-bottom: 1rem;">Her self-founded company, Charge Solutions, currently offers UK immigration consultancy, providing strategic, consistent, and tailored guidance throughout the immigration process.</p>
-                            <p style="margin-bottom: 1rem;">As Visa and Admissions Advisor, she has access to a wide network of UK universities. Her close connections with the admissions offices means she can offer guidance to students while they try to find their ideal university and course that is tailored to their strengths and aspirations. Her expertise and guidance allow students to confidently navigate the higher education system, making informed decisions that form the foundations for a successful application and a gratifying academic journey.</p>
-                            <p style="margin-bottom: 1rem;">She has a Postgraduate Degree in Education from the University of Brighton. This advanced qualification provides her a deep understanding of the pedagogical nuances of the college application process, student development, and UK's educational landscape.</p>
-                            <p style="margin-bottom: 1rem;">Laura is also a former UK Immigration Officer, Visa Officer, and Entry Clearance Manager with over 25 years of frontline experience. Her strong Home Office background means she is well versed with the visa process; she knows exactly what visa officers look for and where visa applications often go wrong.</p>
-                            <p style="margin-bottom: 0;">With Vantage, she will leverage this unparalleled experience to offer our students clear, confident, and precise support throughout the UK university and visa application process.</p>
-                        </div>
+                    <div class="team-body">
+                        <h3 class="team-name">Laura Charge</h3>
+                        <p class="team-role">Visa and Admissions Advisor, UK Admissions</p>
+                        <p class="team-teaser">Leading our UK Admissions operations — a former UK Immigration Officer and Entry Clearance Manager with over 25 years of frontline experience.</p>
+                        <button type="button" class="team-readmore" aria-haspopup="dialog" data-bio="bio-laura">
+                            Read more <span class="team-readmore-arrow" aria-hidden="true">→</span>
+                        </button>
                     </div>
-                </div>
+                    <div class="team-bio-source" id="bio-laura" hidden>
+                        <p>Laura Charge of Charge Solutions is partnering with Vantage Education Pakistan, leading our UK Admissions operations!</p>
+                        <p>Her self-founded company, Charge Solutions, currently offers UK immigration consultancy, providing strategic, consistent, and tailored guidance throughout the immigration process.</p>
+                        <p>As Visa and Admissions Advisor, she has access to a wide network of UK universities. Her close connections with the admissions offices means she can offer guidance to students while they try to find their ideal university and course that is tailored to their strengths and aspirations. Her expertise and guidance allow students to confidently navigate the higher education system, making informed decisions that form the foundations for a successful application and a gratifying academic journey.</p>
+                        <p>She has a Postgraduate Degree in Education from the University of Brighton. This advanced qualification provides her a deep understanding of the pedagogical nuances of the college application process, student development, and UK's educational landscape.</p>
+                        <p>Laura is also a former UK Immigration Officer, Visa Officer, and Entry Clearance Manager with over 25 years of frontline experience. Her strong Home Office background means she is well versed with the visa process; she knows exactly what visa officers look for and where visa applications often go wrong.</p>
+                        <p>With Vantage, she will leverage this unparalleled experience to offer our students clear, confident, and precise support throughout the UK university and visa application process.</p>
+                    </div>
+                </article>
             </div>
         </div>
 
         <style>
-            .team-card:hover img {
+            /* --- Horizontal team grid --- */
+            .team-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2.5rem;
+                align-items: stretch;
+            }
+
+            .team-card {
+                display: flex;
+                flex-direction: column;
+                background: #ffffff;
+                border: 1px solid #eceff3;
+                border-radius: 20px;
+                overflow: hidden;
+                text-align: left;
+                box-shadow: 0 10px 30px rgba(10, 31, 68, 0.06);
+                transition: transform 0.35s ease, box-shadow 0.35s ease;
+            }
+
+            .team-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 24px 50px rgba(10, 31, 68, 0.12);
+            }
+
+            .team-photo {
+                position: relative;
+                aspect-ratio: 3 / 4;
+                overflow: hidden;
+                background: #f3f4f6;
+            }
+
+            .team-photo img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center 15%;
+                display: block;
+                transition: transform 0.5s ease;
+            }
+
+            .team-card:hover .team-photo img {
                 transform: scale(1.05);
             }
 
+            .team-body {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                padding: 1.75rem 1.5rem 1.5rem;
+            }
+
+            .team-name {
+                font-family: 'Merriweather', serif;
+                font-size: 1.35rem;
+                font-weight: 700;
+                color: #1D150E;
+                margin-bottom: 0.35rem;
+                line-height: 1.3;
+            }
+
+            .team-role {
+                color: var(--crimson-dark);
+                font-size: 0.9rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                line-height: 1.5;
+            }
+
+            .team-teaser {
+                font-size: 0.97rem;
+                color: #555;
+                line-height: 1.75;
+                margin-bottom: 1.5rem;
+            }
+
+            .team-readmore {
+                margin-top: auto;
+                align-self: flex-start;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: transparent;
+                border: 1px solid var(--crimson);
+                color: var(--crimson);
+                font-family: 'Poppins', sans-serif;
+                font-size: 0.9rem;
+                font-weight: 600;
+                padding: 0.65rem 1.4rem;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: background 0.3s ease, color 0.3s ease;
+            }
+
+            .team-readmore:hover,
+            .team-readmore:focus-visible {
+                background: var(--crimson);
+                color: #ffffff;
+            }
+
+            .team-readmore-arrow {
+                transition: transform 0.3s ease;
+            }
+
+            .team-readmore:hover .team-readmore-arrow {
+                transform: translateX(3px);
+            }
+
+            /* --- Bio modal --- */
+            .team-modal {
+                position: fixed;
+                inset: 0;
+                z-index: 10050;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1.5rem;
+            }
+
+            .team-modal[hidden] {
+                display: none;
+            }
+
+            .team-modal-backdrop {
+                position: absolute;
+                inset: 0;
+                background: rgba(5, 11, 31, 0.65);
+                backdrop-filter: blur(4px);
+                animation: teamFade 0.25s ease;
+            }
+
+            .team-modal-panel {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 720px;
+                max-height: 85vh;
+                background: #ffffff;
+                border-radius: 20px;
+                box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+                animation: teamRise 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+
+            .team-modal-close {
+                position: absolute;
+                top: 0.9rem;
+                right: 1rem;
+                width: 38px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(10, 31, 68, 0.06);
+                border: none;
+                border-radius: 50%;
+                font-size: 1.6rem;
+                line-height: 1;
+                color: var(--crimson);
+                cursor: pointer;
+                transition: background 0.25s ease;
+            }
+
+            .team-modal-close:hover,
+            .team-modal-close:focus-visible {
+                background: rgba(10, 31, 68, 0.14);
+            }
+
+            .team-modal-header {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+                padding: 2rem 4rem 1.5rem 2rem;
+                border-bottom: 1px solid #eceff3;
+                flex-shrink: 0;
+            }
+
+            .team-modal-avatar {
+                width: 72px;
+                height: 72px;
+                border-radius: 50%;
+                overflow: hidden;
+                flex-shrink: 0;
+                background: #f3f4f6;
+            }
+
+            .team-modal-avatar img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center 15%;
+                display: block;
+            }
+
+            .team-modal-name {
+                font-family: 'Merriweather', serif;
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: #1D150E;
+                margin-bottom: 0.25rem;
+                line-height: 1.3;
+            }
+
+            .team-modal-role {
+                color: var(--crimson-dark);
+                font-size: 0.92rem;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            .team-modal-body {
+                padding: 1.75rem 2rem 2rem;
+                overflow-y: auto;
+                font-size: 1rem;
+                color: #555;
+                line-height: 1.85;
+            }
+
+            .team-modal-body p {
+                margin-bottom: 1.1rem;
+            }
+
+            .team-modal-body p:last-child {
+                margin-bottom: 0;
+            }
+
+            body.team-modal-open {
+                overflow: hidden;
+            }
+
+            @keyframes teamFade {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+
+            @keyframes teamRise {
+                from { opacity: 0; transform: translateY(20px) scale(0.97); }
+                to { opacity: 1; transform: translateY(0) scale(1); }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .team-card,
+                .team-photo img,
+                .team-modal-backdrop,
+                .team-modal-panel {
+                    transition: none;
+                    animation: none;
+                }
+            }
+
+            /* --- Responsive --- */
             @media (max-width: 1024px) {
                 .desktop-decoration {
                     display: none !important;
+                }
+
+                .team-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 2rem;
+                }
+
+                .team-heading {
+                    font-size: 2.25rem !important;
                 }
             }
 
@@ -300,27 +557,56 @@
                     padding: 5rem 1.5rem !important;
                 }
 
-                .team-card-horizontal {
-                    grid-template-columns: 1fr !important;
-                    text-align: center !important;
+                .team-eyebrow {
+                    font-size: 1.15rem !important;
                 }
 
-                .team-card-horizontal > div:first-child {
-                    margin: 0 auto;
+                .team-heading {
+                    font-size: 1.9rem !important;
                 }
 
-                .team-card-horizontal > div:last-child {
-                    text-align: left;
+                .team-modal-header {
+                    padding: 1.75rem 3.5rem 1.25rem 1.5rem;
+                    gap: 1rem;
                 }
 
-                .team-card-horizontal .team-card-horizontal > div[style*="320px"] {
-                    width: 100% !important;
-                    max-width: 320px;
+                .team-modal-avatar {
+                    width: 56px;
+                    height: 56px;
+                }
+
+                .team-modal-body {
+                    padding: 1.5rem;
+                }
+            }
+
+            @media (max-width: 640px) {
+                .team-grid {
+                    grid-template-columns: 1fr;
+                    max-width: 420px;
                     margin: 0 auto;
                 }
             }
         </style>
     </section>
+
+    <!-- Team Bio Modal -->
+    <div class="team-modal" id="teamModal" hidden>
+        <div class="team-modal-backdrop" data-team-close></div>
+        <div class="team-modal-panel" role="dialog" aria-modal="true" aria-labelledby="teamModalName">
+            <button type="button" class="team-modal-close" data-team-close aria-label="Close biography">&times;</button>
+            <div class="team-modal-header">
+                <div class="team-modal-avatar">
+                    <img id="teamModalPhoto" src="" alt="">
+                </div>
+                <div>
+                    <h3 class="team-modal-name" id="teamModalName"></h3>
+                    <p class="team-modal-role" id="teamModalRole"></p>
+                </div>
+            </div>
+            <div class="team-modal-body" id="teamModalBody"></div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="site-footer">
@@ -413,6 +699,79 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            const modal = document.getElementById('teamModal');
+            if (!modal) return;
+
+            const panel = modal.querySelector('.team-modal-panel');
+            const photoEl = document.getElementById('teamModalPhoto');
+            const nameEl = document.getElementById('teamModalName');
+            const roleEl = document.getElementById('teamModalRole');
+            const bodyEl = document.getElementById('teamModalBody');
+            const closeBtn = modal.querySelector('.team-modal-close');
+            let lastFocused = null;
+
+            function openModal(trigger) {
+                const card = trigger.closest('.team-card');
+                const bio = document.getElementById(trigger.dataset.bio);
+                if (!card || !bio) return;
+
+                const img = card.querySelector('.team-photo img');
+                photoEl.src = img ? img.getAttribute('src') : '';
+                photoEl.alt = img ? img.getAttribute('alt') : '';
+                nameEl.textContent = card.querySelector('.team-name').textContent;
+                roleEl.textContent = card.querySelector('.team-role').textContent;
+                bodyEl.innerHTML = bio.innerHTML;
+                bodyEl.scrollTop = 0;
+
+                lastFocused = trigger;
+                modal.hidden = false;
+                document.body.classList.add('team-modal-open');
+                closeBtn.focus();
+            }
+
+            function closeModal() {
+                modal.hidden = true;
+                document.body.classList.remove('team-modal-open');
+                if (lastFocused) lastFocused.focus();
+            }
+
+            document.querySelectorAll('.team-readmore').forEach(btn => {
+                btn.addEventListener('click', () => openModal(btn));
+            });
+
+            modal.querySelectorAll('[data-team-close]').forEach(el => {
+                el.addEventListener('click', closeModal);
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (modal.hidden) return;
+
+                if (e.key === 'Escape') {
+                    closeModal();
+                    return;
+                }
+
+                // Keep focus inside the dialog while it is open
+                if (e.key === 'Tab') {
+                    const focusable = panel.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                    if (!focusable.length) return;
+                    const first = focusable[0];
+                    const last = focusable[focusable.length - 1];
+
+                    if (e.shiftKey && document.activeElement === first) {
+                        e.preventDefault();
+                        last.focus();
+                    } else if (!e.shiftKey && document.activeElement === last) {
+                        e.preventDefault();
+                        first.focus();
+                    }
+                }
+            });
+        })();
+    </script>
 
     <script src="js/main.js"></script>
 </body>
